@@ -165,7 +165,7 @@
         ]
     },
     {
-        "pregunta": "Al final del día, luego de pagar el café de la mañana, comprar algo de comida para llevar y gastar un poco más en algunos artículos en línea, te das cuenta de que no has anotado nada de esto. Al llegar a casa, te sientas a reflexionar sobre cómo has manejado tus gastos diarios. ¿Cómo sueles recordar y gestionar tus gastos para asegurarte de que estás manteniendo un equilibrio financiero saludable?",
+        "pregunta": "Al final del día, luego de pagar el café de la mañana, comprar algo de comida para llevar y gastar un poco más en algunos artículos en línea, te das cuenta de que no has anotado nada de esto. Al llegar a casa, te sientas a reflexionar sobre cómo has manejado tus gastos diarios. ¿Que haces?",
         "respuestas": [
             {
                 "respuesta": "Suelo llevar un registro detallado de mis gastos diarios utilizando una aplicación financiera o anotando en un cuaderno. Esto me ayuda a mantener un equilibrio financiero saludable y a identificar áreas donde puedo ajustar mis gastos.",
@@ -221,7 +221,7 @@
         ]
     },
     {
-        "pregunta": "Durante una reunión con amigos cercanos o familiares, notas que muchos de ellos tienen hábitos de gasto en los que constantemente compran artículos de lujo o siguen modas recientes. ¿Cómo te sientes al tomar decisiones sobre tus propias finanzas? ¿Te sientes presionado/a a seguir sus hábitos de gasto, o te motiva a mantener tus propios estándares financieros y prioridades?",
+        "pregunta": "Durante una reunión con amigos cercanos o familiares, notas que muchos de ellos tienen hábitos de gasto en los que constantemente compran artículos de lujo o siguen modas recientes. ¿Que sientes?",
         "respuestas": [
             {
                 "respuesta": "Me siento motivado/a a mantener mis propios estándares financieros y prioridades. Prefiero tomar decisiones basadas en mi situación financiera y metas personales, sin dejarme influenciar por los hábitos de gasto de los demás.",
@@ -277,7 +277,7 @@
         ]
     },
     {
-        "pregunta": "Recientemente descubres una nueva aplicación financiera que promete ayudarte a ahorrar más dinero y gestionar tus finanzas de manera más efectiva. ¿Qué haces? ¿Estás dispuesto/a a probarla y adoptar nuevas herramientas para mejorar tu manejo financiero, o prefieres mantener tus métodos actuales?",
+        "pregunta": "Recientemente descubres una nueva aplicación financiera que promete ayudarte a ahorrar más dinero y gestionar tus finanzas de manera más efectiva. ¿Qué haces?",
         "respuestas": [
             {
                 "respuesta": "Estoy dispuesto/a a probarla y adoptar nuevas herramientas para mejorar mi manejo financiero. Creo que siempre hay espacio para aprender y utilizar tecnología que pueda optimizar mis finanzas personales.",
@@ -333,7 +333,7 @@
         ]
     },
     {
-        "pregunta": "A pesar de enfrentar algunos desafíos financieros recientes, mantienes una actitud optimista y confías en tu capacidad para manejar la situación con determinación. ¿Cómo crees que esta actitud positiva te ayuda en tu día a día para tomar decisiones financieras efectivas? ¿Qué diferencias crees que experimentarías si tu enfoque fuera más pesimista?",
+        "pregunta": "A pesar de enfrentar algunos desafíos financieros recientes, mantienes una actitud optimista y confías en tu capacidad para manejar la situación con determinación. ¿Que haces?",
         "respuestas": [
             {
                 "respuesta": "Mi actitud optimista me ayuda a mantener la determinación y buscar soluciones creativas para manejar desafíos financieros. Creo que la confianza en mis habilidades me motiva a tomar decisiones financieras efectivas y a encontrar oportunidades incluso en situaciones difíciles.",
