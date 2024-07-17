@@ -90,7 +90,7 @@
         ]
     },
     {
-        "pregunta": "Después de un largo día de trabajo, te encuentras en una tienda viendo un artículo de lujo que siempre has deseado. Te sientes tentado/a por el impulso emocional de comprarlo ahora, pero también sabes que es importante tomar decisiones financieras racionales. ¿Que prefieres?",
+        "pregunta": "Después de un largo día de trabajo, te encuentras en una tienda viendo un artículo de lujo que siempre has deseado. Te sientes tentado/a por el impulso emocional de comprarlo ahora, pero también sabes que es importante tomar decisiones financieras racionales. ¿Qué prefieres hacer?",
         "respuestas": [
             {
                 "respuesta": "Prefiero tomarme mi tiempo, evaluar si es una compra realmente necesaria y hacer una elección informada. No quiero dejarme llevar por el impulso emocional del momento.",
@@ -165,7 +165,7 @@
         ]
     },
     {
-        "pregunta": "Al final del día, luego de pagar el café de la mañana, comprar algo de comida para llevar y gastar un poco más en algunos artículos en línea, te das cuenta de que no has anotado nada de esto. Al llegar a casa, te sientas a reflexionar sobre cómo has manejado tus gastos diarios. ¿Que haces?",
+        "pregunta": "Al final del día, luego de pagar el café de la mañana, comprar algo de comida para llevar y gastar un poco más en algunos artículos en línea, te das cuenta de que no has anotado nada de esto. Al llegar a casa, te sientas a reflexionar sobre cómo has manejado tus gastos diarios. ¿Qué sueles hacer?",
         "respuestas": [
             {
                 "respuesta": "Suelo llevar un registro detallado de mis gastos diarios utilizando una aplicación financiera o anotando en un cuaderno. Esto me ayuda a mantener un equilibrio financiero saludable y a identificar áreas donde puedo ajustar mis gastos.",
@@ -277,7 +277,7 @@
         ]
     },
     {
-        "pregunta": "Recientemente descubres una nueva aplicación financiera que promete ayudarte a ahorrar más dinero y gestionar tus finanzas de manera más efectiva. ¿Qué haces?",
+        "pregunta": "Recientemente descubres una nueva aplicación financiera que promete ayudarte a ahorrar más dinero y gestionar tus finanzas de manera más efectiva. ¿Qué prefieres hacer?",
         "respuestas": [
             {
                 "respuesta": "Estoy dispuesto/a a probarla y adoptar nuevas herramientas para mejorar mi manejo financiero. Creo que siempre hay espacio para aprender y utilizar tecnología que pueda optimizar mis finanzas personales.",
@@ -333,7 +333,7 @@
         ]
     },
     {
-        "pregunta": "A pesar de enfrentar algunos desafíos financieros recientes, mantienes una actitud optimista y confías en tu capacidad para manejar la situación con determinación. ¿Que haces?",
+        "pregunta": "A pesar de enfrentar algunos desafíos financieros recientes, mantienes una actitud optimista y confías en tu capacidad para manejar la situación con determinación. ¿Que piensas de esto?",
         "respuestas": [
             {
                 "respuesta": "Mi actitud optimista me ayuda a mantener la determinación y buscar soluciones creativas para manejar desafíos financieros. Creo que la confianza en mis habilidades me motiva a tomar decisiones financieras efectivas y a encontrar oportunidades incluso en situaciones difíciles.",
