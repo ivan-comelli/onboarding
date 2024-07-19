@@ -1,43 +1,37 @@
 <template>
     <div class="encuesta">
       <h1>Encuesta: Perfiles Conductuales</h1>
-      <div class="items" v-for="(item, index) in encuesta" :key="index">
-        <h3>{{ item.pregunta }}</h3>
-        <div v-if="!item.flagResolve">
-          <label v-for="(respuesta, idx) in item.respuestas" :key="idx">
+      <div class="items" v-for="(item, index) in survey" :key="index">
+        <h3>{{ item.question }}</h3>
+        <div v-if="answersOptions[index] == null">
+          <label v-for="(instance, idx) in item.answers" :key="idx">
             <input
               type="radio"
               :name="'pregunta' + index"
-              :value="respuesta"
-              v-model="respuestas[index]"
-              @change="item.flagResolve = true"
+              :value="instance"
+              v-model="answersOptions[index]"
             />
-            {{ respuesta.respuesta }}
+            {{ instance.answer }}
           </label>
         </div>
-        <div class="afirmations" v-if="item.flagResolve">
-            <b>{{ respuestas[index].respuesta }}</b>
+        <div class="afirmations" v-else>
+            <b>{{ answersOptions[index].answer }}</b>
             <div class="afirmations-options">
-              <label v-for="(sesgo, idx) in respuestas[index]['sesgos']" :key="idx">
-                <input 
-                  type="checkbox"
-                  :value="!sesgo.status"
-                  v-model="sesgo.status"
-                />
-                {{ sesgo.afirmation }}
-              </label>
+              <div class="options" v-for="(bias, idx) in answersOptions[index].biases" :key="idx">
+                {{ idx + ": " + bias.afirmation + " = " + bias.factor }}
+              </div>
             </div>
-            <button @click="respuestas[index] = ''; item.flagResolve = false">Atras</button>
+            <button @click="answersOptions[index] = null">Atras</button>
         </div>
       </div>
-      <button @click="submitEncuesta">Enviar Encuesta</button>
+      <button @click="submitSurvey">Enviar Encuesta</button>
       <apexchart width="500" type="bar" :options="options" :series="series"></apexchart>
     </div>
   </template>
   
   <script>
-  import encuesta from '../data.json';
-  import values from '../values.json';
+  import surveyJson from '../data.json';
+  import valuesJson from '../model.json';
   import VueApexCharts from "vue3-apexcharts";
 
   export default {
@@ -53,65 +47,63 @@
         },
         series: [{
           data: [{
-            x: 'Attitude',
+            x: 'Self Esteem',
             y: 100
           }, {
-            x: 'Targeting',
+            x: 'Caution',
             y: 100
           }, {
-            x: 'Impulsiveness',
+            x: 'Cognition',
             y: 100
           }, {
-            x: 'Prudence',
+            x: 'Discipline',
             y: 100
           }, {
             x: 'Conformism',
             y: 100
           }, {
-            x: 'Balance',
+            x: 'Flexibility',
             y: 100
           }]
         }],
-        encuesta: [], // Aquí se almacenará el JSON de la encuesta
-        values: [],
-        respuestas: [], // Aquí se almacenarán las respuestas seleccionadas
+        survey: [], // Aquí se almacenará el JSON de la encuesta
+        mapValues: [],
+        answersOptions: [], // Aquí se almacenarán las respuestas seleccionadas
       };
     },
     mounted() {
-      this.encuesta = encuesta;
-      this.values = values;
-      this.respuestas = new Array(this.encuesta.length).fill('');
+      this.survey = surveyJson;
+      this.mapValues = valuesJson;
+      this.answers = new Array(this.survey.length).fill('');
 
-      for (let prop in this.values) {
-        let obj = this.values[prop];
+      for (let prop in this.mapValues) {
+        let obj = this.mapValues[prop];
         let serieW = [];
-        let sumaPesos = 0;
+        let sumWeight = 0;
 
         // Recorremos el objeto una sola vez para obtener los pesos y la suma de los pesos.
-        for (let propSesgo in obj) {
-          let objSesgo = obj[propSesgo];
-          if (objSesgo.weight) {
-            serieW.push(objSesgo.weight);
-            sumaPesos += Math.abs(objSesgo.weight);
+        for (let propBias in obj) {
+          let objBias = obj[propBias];
+          if (objBias.weight) {
+            serieW.push(objBias.weight);
+            sumWeight += Math.abs(objBias.weight);
           }
         }
 
         // Calculamos el valor inicial usando la suma de los pesos.
-        obj.initValue = Number(this.calcularX0(serieW).toFixed(2));
+        obj.initValue = Number(this.calculateBalancedInit(serieW).toFixed(2));
 
         // Recorremos el objeto nuevamente para calcular las proporciones.
-        for (let propSesgo in obj) {
-          let objSesgo = obj[propSesgo];
-          if (objSesgo.weight) {
-            objSesgo.proportion = Number((objSesgo.weight / sumaPesos).toFixed(2));
+        for (let propBias in obj) {
+          let objBias = obj[propBias];
+          if (objBias.weight) {
+            objBias.proportion = Number((objBias.weight / sumWeight).toFixed(2));
           }
         }
-
-        console.log(obj);
       }
     },
     methods: {
-      calcularX0(ponderaciones) {  
+      calculateBalancedInit(ponderaciones) {  
         let conjuntoNegativo = 0;
         let sumaPonderaciones = 0;
         for (let i = 0; i < ponderaciones.length; i++) {
@@ -126,13 +118,13 @@
       },
       calculateFinalValues() {
         let index = 0;
-        for (let prop in this.values) {
-          let obj = this.values[prop];
+        for (let prop in this.mapValues) {
+          let obj = this.mapValues[prop];
           let sumFinalValue = obj.initValue;
           for (let propSesgo in obj) {
-            let objSesgo = obj[propSesgo];
-            if (objSesgo.weight) {
-              sumFinalValue += objSesgo.proportion * objSesgo.intensity
+            let objBias = obj[propSesgo];
+            if (objBias.weight) {
+              sumFinalValue += objBias.proportion * objBias.intensity
             }
           }
           console.log(Number(sumFinalValue.toFixed(2))*100)
@@ -141,55 +133,65 @@
           index += 1;
         }
       },
-      submitEncuesta() {
-        this.respuestas.map((respuesta) => {
-          const sesgos = respuesta.sesgos;
-          sesgos.map((sesgo) => {
-            switch(sesgo.tipo) {
+      submitSurvey() {
+        this.answersOptions.map((item) => {
+          for (const key in item.biases) {
+            const bias = item.biases[key];
+            switch(key) {
               case "overconfidence":
-                this.values.attitude.overconfidence.intensity = sesgo.factor;
-              break;
+                  this.mapValues.selfEsteem.overconfidence.intensity = bias.factor;
+                  break;
+              case "selfAttribution":
+                  // Asumimos que "selfAttribution" es un sesgo bajo "selfEsteem"
+                  this.mapValues.selfEsteem.selfAttribution.intensity = bias.factor;
+                  break;
               case "statusQuo":
-                this.values.attitude.statusQuo.intensity = sesgo.factor;
-              break;
-              case "overreaction":
-                this.values.targeting.overreaction.intensity = sesgo.factor;
-              break;
-              case "framing":
-                this.values.targeting.framing.intensity = sesgo.factor;
-              break;
+                  this.mapValues.caution.statusQuo.intensity = bias.factor;
+                  break;
+              case "regretAversion":
+                  // Asumimos que "regretAversion" es un sesgo bajo "caution"
+                  this.mapValues.caution.regretAversion.intensity = bias.factor;
+                  break;
               case "representativeness":
-                this.values.targeting.representativeness.intensity = sesgo.factor;
-              break;
-              case "availabilityBias":
-                this.values.targeting.availabilityBias.intensity = sesgo.factor;
-              break;
-              case "selfControl":
-                this.values.impulsiveness.selfControl.intensity = sesgo.factor;
-              break;
-              case "endowmentEffect":
-                this.values.prudence.endowmentEffect.intensity = sesgo.factor;
-              break;
-              case "lossAversion":
-                this.values.prudence.lossAversion.intensity = sesgo.factor;
-              break;
+                  this.mapValues.cognition.representativeness.intensity = bias.factor;
+                  break;
+              case "anchoringEffect":
+                  this.mapValues.cognition.anchoringEffect.intensity = bias.factor;
+                  break;
               case "mentalAccounting":
-                this.values.prudence.mentalAccounting.intensity = sesgo.factor;
-              break;
+                  this.mapValues.cognition.mentalAccounting.intensity = bias.factor;
+                  break;
+              case "confirmationBias":
+                  this.mapValues.cognition.confirmationBias.intensity = bias.factor;
+                  break;
+              case "selfControl":
+                  this.mapValues.discipline.selfControl.intensity = bias.factor;
+                  break;
+              case "procrastination":
+                  this.mapValues.discipline.procrastination.intensity = bias.factor;
+                  break;
+              case "endowmentEffect":
+                  this.mapValues.conformism.endowmentEffect.intensity = bias.factor;
+                  break;
               case "herdBehavior":
-                this.values.conformism.herdBehavior.intensity = sesgo.factor;
-              break;
-              case "gamblersFallacy":
-                this.values.balance.gamblersFallacy.intensity = sesgo.factor;
-              break;
+                  this.mapValues.conformism.herdBehavior.intensity = bias.factor;
+                  break;
               case "dispositionEffect":
-                this.values.balance.dispositionEffect.intensity = sesgo.factor;
-              break;
-              case "anchoring":
-                this.values.balance.anchoring.intensity = sesgo.factor;
-              break;
+                  this.mapValues.flexibility.dispositionEffect.intensity = bias.factor;
+                  break;
+              case "lossAversion":
+                  this.mapValues.flexibility.lossAversion.intensity = bias.factor;
+                  break;
+              case "instantGratification":
+                  // Asumimos que "instantGratification" es un sesgo bajo "flexibility"
+                  this.mapValues.flexibility.instantGratification.intensity = bias.factor;
+                  break;
+              default:
+                  console.warn(`Bias '${key}' not defined in the model.`);
+                  break;
             }
-          });
+        }
+
         });
         this.calculateFinalValues();
       }
@@ -232,7 +234,17 @@
     padding: 2em;
   }
   .afirmations-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     padding: 2em 0em;
+
+  }
+  .options {
+    text-align: left;
+    border: solid .1em #d7d7d7;
+    padding: 0.6em;
+    border-radius: 1.5em;
   }
   .items {
     display: flex;

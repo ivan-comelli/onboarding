@@ -1,391 +1,401 @@
 [
     {
-        "pregunta": "Imagina que estás conduciendo hacia el trabajo cuando de repente tu auto hace un ruido extraño. Al llevarlo al mecánico, te informan que necesita una reparación costosa e inesperada. ¿Qué prefieres hacer?",
-        "respuestas": [
+        "question": "Imaginá que estás comenzando un nuevo proyecto que te tiene muy entusiasmado, como abrir tu propio negocio o iniciar un curso que te apasiona. Después de mucho trabajo y preparación, recibís algunas críticas o sugerencias para mejorar. ¿Cómo te sentirías y qué harías?",
+        "answers": [
             {
-                "respuesta": "Prefiero usar mis ahorros personales para pagar la reparación y mantener mi seguridad financiera. Es importante tener un fondo de emergencia para este tipo de gastos inesperados.",
-                "sesgos": [
-                    {
-                        "tipo": "overconfidence",
-                        "afirmation": "Estoy convencido de que puedo manejar esta situación imprevista utilizando mis ahorros, confiando en mi capacidad para gestionar mis finanzas sin depender de fuentes externas.",
-                        "factor": 0.2
+                "answer": "Sentiría que las críticas son una oportunidad para aprender y mejorar. Aunque me afectaría un poco, lo tomaría como un desafío para crecer.",
+                "options": true,
+                "likert": false,
+                "biases": {
+                    "overconfidence": {
+                        "afirmation": "Confianza en la capacidad de aprender y mejorar pese a las críticas.",
+                        "factor": 0.3
                     },
-                    {
-                        "tipo": "statusQuo",
-                        "afirmation": "Opto por mantener la estabilidad financiera actual utilizando mis ahorros en lugar de considerar otras opciones que podrían implicar cambios en mi situación económica.",
-                        "factor": 0.6
-                    },
-                    {
-                        "tipo": "lossAversion",
-                        "afirmation": "Priorizo proteger mi seguridad financiera a largo plazo al utilizar mis ahorros para esta reparación, evitando así cualquier posible riesgo futuro.",
-                        "factor": 0.6
-                    },
-                    {
-                        "tipo": "mentalAccounting",
-                        "afirmation": "Separar parte de mis ahorros específicamente para emergencias me permite gestionar este tipo de gastos de manera organizada y previsora.",
-                        "factor": 0.4
-                    }
-                ]
-            },
-            {
-                "respuesta": "Consideraré obtener un préstamo y pagar en cuotas para no comprometer mi flujo de efectivo actual. Esto me permite mantener liquidez y no afectar mi presupuesto mensual.",
-                "sesgos": [
-                    {
-                        "tipo": "selfControl",
-                        "afirmation": "Decido mantener mi flujo de efectivo actual y evitar comprometer mis finanzas mensuales al optar por un préstamo, demostrando mi habilidad para planificar y controlar mis recursos.",
-                        "factor": 0.4
-                    },
-                    {
-                        "tipo": "framing",
-                        "afirmation": "Prefiero mantener mi liquidez y asegurar mi presupuesto mensual al elegir un préstamo que me permite gestionar este imprevisto sin alterar mi estabilidad financiera.",
+                    "selfAttribution": {
+                        "afirmation": "Atribución a la habilidad para superar desafíos, aunque afectado.",
                         "factor": 0.5
-                    },
-                    {
-                        "tipo": "herdBehavior",
-                        "afirmation": "Observo que obtener un préstamo para cubrir gastos inesperados es una decisión frecuente entre personas en situaciones similares, lo cual me da confianza en esta elección.",
-                        "factor": 0.6
-                    },
-                    {
-                        "tipo": "lossAversion",
-                        "afirmation": "Opto por mantener mi liquidez actual para evitar la pérdida de flexibilidad financiera a largo plazo, eligiendo un préstamo como herramienta para gestionar esta emergencia.",
-                        "factor": 0.6
-                    },
-                    {
-                        "tipo": "availabilityBias",
-                        "afirmation": "La disponibilidad de opciones de préstamo accesibles y flexibles influye en mi decisión, pues percibo esta como una solución práctica y disponible.",
-                        "factor": 0.6
                     }
-                ]
+                }
             },
             {
-                "respuesta": "Optaré por reparaciones parciales o temporales para reducir costos inmediatos y evaluaré mi presupuesto para ver si puedo ahorrar lo suficiente para financiar la reparación sin préstamos.",
-                "sesgos": [
-                    {
-                        "tipo": "selfControl",
-                        "afirmation": "Prefiero adoptar una solución temporal para controlar los costos inmediatos, planificando cuidadosamente para no afectar mi flujo de efectivo y demostrando mi disciplina financiera.",
+                "answer": "Me sentiría desalentado/a y empezaría a cuestionar si estoy realmente a la altura. Podría dudar de mis habilidades y del proyecto en sí.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "overconfidence": {
+                        "afirmation": "Menor confianza en habilidades, duda ante críticas.",
+                        "factor": 0.1
+                    },
+                    "selfAttribution": {
+                        "afirmation": "Alta duda sobre habilidades propias y proyecto debido a críticas.",
+                        "factor": 0.7
+                    }
+                }
+            },
+            {
+                "answer": "Pensaría que los comentarios no entienden mi visión y seguiría adelante con mi plan. Mantendría mi confianza en la dirección que elegí.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "overconfidence": {
+                        "afirmation": "Alta confianza en la visión propia, desestimación de críticas.",
+                        "factor": 0.8
+                    },
+                    "selfAttribution": {
+                        "afirmation": "Atribución de éxito a la visión propia, ignorando críticas.",
+                        "factor": 0.4
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "question": "Estás pensando en cambiar de trabajo para un puesto que ofrece un salario más alto, pero conlleva más responsabilidades y riesgos. ¿Cómo decidirías si dar el salto o quedarte en tu empleo actual?",
+        "answers": [
+            {
+                "answer": "Aceptar el nuevo trabajo inmediatamente para aprovechar el aumento de salario.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "instantGratification": {
+                        "afirmation": "Prioriza la recompensa inmediata sin considerar riesgos a largo plazo.",
                         "factor": 0.7
                     },
-                    {
-                        "tipo": "lossAversion",
-                        "afirmation": "Elegir reparaciones temporales me permite minimizar el impacto financiero inmediato, evitando así una pérdida significativa y manteniendo mi estabilidad económica a largo plazo.",
+                    "statusQuo": {
+                        "afirmation": "Decisión impulsiva para obtener beneficios rápidos, ignorando la estabilidad actual.",
+                        "factor": 0.3
+                    }                   
+                }
+            },
+            {
+                "answer": "Investigar a fondo el nuevo trabajo y comparar con tu situación actual antes de decidir.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "regretAversion": {
+                        "afirmation": "Investigación exhaustiva para evitar arrepentimientos futuros.",
                         "factor": 0.6
                     },
-                    {
-                        "tipo": "mentalAccounting",
-                        "afirmation": "Considerar opciones de reparación parcial se basa en mi experiencia previa y en una planificación cuidadosa de recursos, lo cual me ayuda a gestionar esta situación de manera efectiva.",
-                        "factor": 0.5
-                    },
-                    {
-                        "tipo": "representativeness",
-                        "afirmation": "Prefiero soluciones que se asemejen a experiencias pasadas, lo cual me permite tomar decisiones financieras más informadas y adaptadas a mi situación actual.",
-                        "factor": 0.5
-                    },
-                    {
-                        "tipo": "availabilityBias",
-                        "afirmation": "La familiaridad con soluciones temporales y la disponibilidad de recursos para implementarlas influyen en mi elección, siendo esta una opción viable y práctica.",
-                        "factor": 0.5
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "pregunta": "Después de un largo día de trabajo, te encuentras en una tienda viendo un artículo de lujo que siempre has deseado. Te sientes tentado/a por el impulso emocional de comprarlo ahora, pero también sabes que es importante tomar decisiones financieras racionales. ¿Qué prefieres hacer?",
-        "respuestas": [
+                    "statusQuo": {
+                        "afirmation": "Evaluación cuidadosa para decidir si mantener la situación actual o cambiar.",
+                        "factor": 0.4
+                    }  
+                }
+            },
             {
-                "respuesta": "Prefiero tomarme mi tiempo, evaluar si es una compra realmente necesaria y hacer una elección informada. No quiero dejarme llevar por el impulso emocional del momento.",
-                "sesgos": [
-                    {
-                        "tipo": "overreaction",
-                        "afirmation": "Prefiero pensar bien antes de comprar algo, evitando decisiones apresuradas que pueda lamentar después.",
+                "answer": "Esperar a recibir la opinión de colegas y familiares antes de decidir.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "herdBehavior": {
+                        "afirmation": "Buscar el consejo de otros para minimizar riesgos y obtener validación.",
                         "factor": 0.6
                     },
-                    {
-                        "tipo": "statusQuo",
-                        "afirmation": "Es importante para mí mantener el equilibrio financiero evaluando cuidadosamente cada compra.",
-                        "factor": 0.5
-                    },
-                    {
-                        "tipo": "lossAversion",
-                        "afirmation": "Quiero asegurarme de no gastar innecesariamente y proteger mis recursos para situaciones importantes.",
-                        "factor": 0.4
-                    },
-                    {
-                        "tipo": "representativeness",
-                        "afirmation": "Prefiero decidir basándome en lo que realmente necesito en lugar de dejarme llevar por las apariencias.",
+                    "regretAversion": {
+                        "afirmation": "Consultar para evitar arrepentimientos futuros al tomar una decisión informada.",
                         "factor": 0.4
                     }
-                ]
+                }
             },
             {
-                "respuesta": "Me siento tentado/a por el impulso emocional de comprarlo ahora, pero sé que es importante tomar decisiones financieras racionales. Decidiré si realmente puedo permitírmelo y si encaja en mi presupuesto actual.",
-                "sesgos": [
-                    {
-                        "tipo": "overconfidence",
-                        "afirmation": "Aunque me tienta comprarlo ahora, sé que es mejor pensar si realmente lo necesito y si puedo pagarlo sin afectar mi presupuesto.",
-                        "factor": 0.4
+                "answer": "Decidir quedarte en tu trabajo actual porque temes los riesgos del nuevo puesto.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "lossAversion": {
+                        "afirmation": "Evitar el riesgo y la posible pérdida al valorar la estabilidad actual por encima del aumento de salario.",
+                        "factor": 0.8
                     },
-                    {
-                        "tipo": "lossAversion",
-                        "afirmation": "Antes de decidir, quiero estar seguro/a de que esta compra no afectará negativamente mi situación financiera.",
-                        "factor": 0.3
-                    },
-                    {
-                        "tipo": "framing",
-                        "afirmation": "Analizar si encaja en mi presupuesto actual me ayuda a tomar una decisión más racional.",
-                        "factor": 0.3
-                    },
-                    {
-                        "tipo": "representativeness",
-                        "afirmation": "Prefiero considerar mi situación financiera actual antes de tomar una decisión impulsiva.",
-                        "factor": 0.3
-                    }
-                ]
-            },
-            {
-                "respuesta": "Decidiré comprar el artículo de lujo como recompensa por un logro reciente, justificando la compra con la idea de que me merezco el placer ahora mismo.",
-                "sesgos": [
-                    {
-                        "tipo": "framing",
-                        "afirmation": "Ver esta compra como una recompensa me motiva a darme un gusto después de un logro importante.",
-                        "factor": 0.6
-                    },
-                    {
-                        "tipo": "overconfidence",
-                        "afirmation": "Creo que merezco este placer y puedo justificarlo emocionalmente después de haber alcanzado una meta.",
-                        "factor": 0.5
-                    },
-                    {
-                        "tipo": "representativeness",
-                        "afirmation": "Para mí, comprar este artículo como recompensa refleja mi situación personal y emocional actual.",
-                        "factor": 0.4
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "pregunta": "Al final del día, luego de pagar el café de la mañana, comprar algo de comida para llevar y gastar un poco más en algunos artículos en línea, te das cuenta de que no has anotado nada de esto. Al llegar a casa, te sientas a reflexionar sobre cómo has manejado tus gastos diarios. ¿Qué sueles hacer?",
-        "respuestas": [
-            {
-                "respuesta": "Suelo llevar un registro detallado de mis gastos diarios utilizando una aplicación financiera o anotando en un cuaderno. Esto me ayuda a mantener un equilibrio financiero saludable y a identificar áreas donde puedo ajustar mis gastos.",
-                "sesgos": [
-                    {
-                        "tipo": "overconfidence",
-                        "factor": 0.7
-                    },
-                    {
-                        "tipo": "gambler'sFallacy",
-                        "factor": 0.5
-                    },
-                    {
-                        "tipo": "anchoring",
-                        "factor": 0.4
-                    }
-                ]
-            },
-            {
-                "respuesta": "A veces olvido anotar mis gastos diarios, pero suelo revisar mis cuentas bancarias y estados de cuenta para recordarlos y ajustar mi presupuesto según sea necesario.",
-                "sesgos": [
-                    {
-                        "tipo": "selfControl",
-                        "factor": 0.4
-                    },
-                    {
-                        "tipo": "confirmationBias",
-                        "factor": 0.3
-                    },
-                    {
-                        "tipo": "framing",
-                        "factor": 0.3
-                    }
-                ]
-            },
-            {
-                "respuesta": "No suelo preocuparme por anotar cada gasto diario, confiando en que mis patrones de gasto generalmente son razonables y no requieren un seguimiento detallado.",
-                "sesgos": [
-                    {
-                        "tipo": "homeBias",
-                        "factor": 0.5
-                    },
-                    {
-                        "tipo": "lossAversion",
-                        "factor": 0.4
-                    },
-                    {
-                        "tipo": "availabilityBias",
-                        "factor": 0.3
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "pregunta": "Durante una reunión con amigos cercanos o familiares, notas que muchos de ellos tienen hábitos de gasto en los que constantemente compran artículos de lujo o siguen modas recientes. ¿Que sientes?",
-        "respuestas": [
-            {
-                "respuesta": "Me siento motivado/a a mantener mis propios estándares financieros y prioridades. Prefiero tomar decisiones basadas en mi situación financiera y metas personales, sin dejarme influenciar por los hábitos de gasto de los demás.",
-                "sesgos": [
-                    {
-                        "tipo": "overconfidence",
-                        "factor": 0.7
-                    },
-                    {
-                        "tipo": "framing",
-                        "factor": 0.6
-                    },
-                    {
-                        "tipo": "selfControl",
-                        "factor": 0.5
-                    }
-                ]
-            },
-            {
-                "respuesta": "A veces siento presión para seguir los hábitos de gasto de mis amigos o familiares, pero trato de mantener un equilibrio entre disfrutar de la vida y mantener mi estabilidad financiera a largo plazo.",
-                "sesgos": [
-                    {
-                        "tipo": "availabilityBias",
-                        "factor": 0.4
-                    },
-                    {
-                        "tipo": "mentalAccounting",
-                        "factor": 0.3
-                    },
-                    {
-                        "tipo": "selfControl",
-                        "factor": 0.3
-                    }
-                ]
-            },
-            {
-                "respuesta": "Considero los hábitos de gasto de mis amigos como una referencia para mis propias decisiones financieras, a veces siguiéndolos para encajar mejor socialmente.",
-                "sesgos": [
-                    {
-                        "tipo": "lossAversion",
-                        "factor": 0.5
-                    },
-                    {
-                        "tipo": "endowmentEffect",
-                        "factor": 0.4
-                    },
-                    {
-                        "tipo": "selfControl",
-                        "factor": 0.3
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "pregunta": "Recientemente descubres una nueva aplicación financiera que promete ayudarte a ahorrar más dinero y gestionar tus finanzas de manera más efectiva. ¿Qué prefieres hacer?",
-        "respuestas": [
-            {
-                "respuesta": "Estoy dispuesto/a a probarla y adoptar nuevas herramientas para mejorar mi manejo financiero. Creo que siempre hay espacio para aprender y utilizar tecnología que pueda optimizar mis finanzas personales.",
-                "sesgos": [
-                    {
-                        "tipo": "availabilityBias",
-                        "factor": 0.5
-                    },
-                    {
-                        "tipo": "overconfidence",
-                        "factor": 0.4
-                    },
-                    {
-                        "tipo": "framing",
-                        "factor": 0.4
-                    }
-                ]
-            },
-            {
-                "respuesta": "Prefiero mantener mis métodos actuales hasta estar seguro/a de que la nueva aplicación realmente puede ofrecer beneficios adicionales y se alinea con mis necesidades financieras.",
-                "sesgos": [
-                    {
-                        "tipo": "confirmationBias",
-                        "factor": 0.3
-                    },
-                    {
-                        "tipo": "selfControl",
-                        "factor": 0.3
-                    },
-                    {
-                        "tipo": "mentalAccounting",
+                    "regretAversion": {
+                        "afirmation": "Evitar la posibilidad de arrepentimiento al no asumir riesgos.",
                         "factor": 0.2
                     }
-                ]
-            },
-            {
-                "respuesta": "Adoptaré la nueva aplicación financiera de inmediato, confiando en las recomendaciones y reseñas positivas de otros usuarios, sin investigar más a fondo sus características específicas.",
-                "sesgos": [
-                    {
-                        "tipo": "statusQuo",
-                        "factor": 0.5
-                    },
-                    {
-                        "tipo": "homeBias",
-                        "factor": 0.4
-                    },
-                    {
-                        "tipo": "selfControl",
-                        "factor": 0.3
-                    }
-                ]
+                }
             }
         ]
     },
     {
-        "pregunta": "A pesar de enfrentar algunos desafíos financieros recientes, mantienes una actitud optimista y confías en tu capacidad para manejar la situación con determinación. ¿Que piensas de esto?",
-        "respuestas": [
+        "question": "Imagina que estás a punto de comprar tu primer auto y ves dos ofertas en línea: una es un modelo nuevo y la otra es de un modelo usado con buenas reseñas. ¿Cómo decides cuál comprar?",
+        "answers": [
             {
-                "respuesta": "Mi actitud optimista me ayuda a mantener la determinación y buscar soluciones creativas para manejar desafíos financieros. Creo que la confianza en mis habilidades me motiva a tomar decisiones financieras efectivas y a encontrar oportunidades incluso en situaciones difíciles.",
-                "sesgos": [
-                    {
-                        "tipo": "availabilityBias",
-                        "factor": 0.5
+                "answer": "Elijo el modelo nuevo porque creo que será más confiable.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "representativeness": {
+                        "afirmation": "Estás juzgando la confiabilidad del auto basándote en la representación del modelo nuevo como más fiable.",
+                        "factor": 0.7
                     },
-                    {
-                        "tipo": "overconfidence",
-                        "factor": 0.4
-                    },
-                    {
-                        "tipo": "framing",
-                        "factor": 0.4
+                    "anchoringEffect": {
+                        "afirmation": "El modelo nuevo establece un punto de referencia que puede influir en tu percepción de confiabilidad.",
+                        "factor": 0.3
                     }
-                ]
+                }
             },
             {
-                "respuesta": "Creo que una actitud positiva puede influir en mis decisiones financieras al mantenerme enfocado/a en soluciones en lugar de preocupaciones. Me ayuda a mantener la calma y pensar estratégicamente para resolver problemas financieros.",
-                "sesgos": [
-                    {
-                        "tipo": "confirmationBias",
-                        "factor": 0.3
-                    },
-                    {
-                        "tipo": "selfControl",
-                        "factor": 0.3
-                    },
-                    {
-                        "tipo": "mentalAccounting",
-                        "factor": 0.2
-                    }
-                ]
-            },
-            {
-                "respuesta": " Mi optimismo me lleva a minimizar los desafíos financieros como temporales y manejables, permitiéndome mantener la calma y no alterar mi rutina de gastos diarios. ",
-                "sesgos": [
-                    {
-                        "tipo": "statusQuo",
+                "answer": "Opto por el modelo usado porque las reseñas positivas me dan seguridad.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "mentalAccounting": {
+                        "afrimation": "Valoración del auto usado basada en las reseñas positivas, considerando esto como una 'buena inversión'.",
                         "factor": 0.5
                     },
-                    {
-                        "tipo": "homeBias",
-                        "factor": 0.4
+                    "confirmationBias": {
+                        "afrimation": "Buscas y confías en las reseñas que confirman tu creencia en la calidad del auto usado.",
+                        "factor": 0.5
+                    }
+                }
+            },
+            {
+                "answer": "Me dejo llevar por la oferta que veo primero, sin pensarlo mucho.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "anchoringEffect": {
+                        "afirmation": "La primera oferta vista actúa como un punto de referencia que afecta tu decisión.",
+                        "factor": 0.7
                     },
-                    {
-                        "tipo": "selfControl",
+                    "overconfidence": {
+                        "afirmation": "Confías demasiado en tu primera impresión y no consideras otras opciones adecuadamente.",
                         "factor": 0.3
                     }
-                ]
+                }
+            },
+            {
+                "answer": "Investigo mucho antes de decidir, comparando precios y características detalladamente.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    
+                }
+            },
+            {
+                "answer": "Elijo basándome en lo que me recomienda un amigo cercano.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "representativeness": {
+                        "afirmation": "La recomendación del amigo puede influir en tu percepción de la calidad del auto.",
+                        "factor": 0.4
+                    },
+                    "anchoringEffect": {
+                        "afirmation": "La recomendación actúa como un punto de referencia que afecta tu decisión.",
+                        "factor": 0.3
+                    },
+                    "confirmationBias": {
+                        "afirmation": "Buscas confirmar la recomendación de tu amigo y descartar otras opciones.",
+                        "factor": 0.3
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "question": "Imagina que tienes un proyecto importante que debe ser entregado en una semana, pero hay una fiesta este fin de semana que realmente quieres asistir. ¿Cómo manejas la situación?",
+        "answers": [
+            {
+                "answer": "Dejo todo para después de la fiesta, ya me pondré al día luego.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "procastination": {
+                        "afirmation": "Posponer el trabajo para después del evento.",
+                        "factor": 0.8
+                    },
+                    "instantGratification": {
+                        "afirmation": "Preferir disfrutar la fiesta en lugar de trabajar.",
+                        "factor": 0.6
+                    }
+                }
+            },
+            {
+                "answer": "Trabajo duro antes de la fiesta para poder disfrutar sin preocupaciones.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "selfControl": {
+                        "afirmation": "Controlar el impulso de procrastinar para cumplir con el plazo.",
+                        "factor": 0.7
+                    }
+                }
+            },
+            {
+                "answer": "Decido no ir a la fiesta para asegurarme de terminar el proyecto a tiempo.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "selfControl": {
+                        "afirmation": "Priorizar el trabajo sobre la gratificación inmediata.",
+                        "factor": 0.9
+                    },
+                    "regretAversion": {
+                        "afirmation": "Evitar el arrepentimiento de no cumplir con el proyecto.",
+                        "factor": 0.5
+                    }
+                }
+            },
+            {
+                "answer": "Trato de equilibrar el trabajo y la fiesta, haciéndolo todo a última hora.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "procastination": {
+                        "afirmation": "Dejar el trabajo para el último momento.",
+                        "factor": 0.7
+                    },
+                    "instantGratification": {
+                        "afirmation": "Intentar disfrutar la fiesta mientras se trabaja en el proyecto de forma apurada.",
+                        "factor": 0.4
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "question": "Tus amigos deciden hacer un viaje de fin de semana a las montañas para hacer senderismo y acampar. A vos no te gusta mucho la idea porque preferís las playas y no estás seguro de disfrutar la experiencia. ¿Qué hacés?",
+        "answers": [
+            {
+                "answer": "Voy con ellos, no quiero ser el único que se quede en casa.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "herdBehavior": {
+                        "afirmation": "seguir al grupo",
+                        "factor": 0.9
+                    },
+                    "lossAversion": {
+                        "afirmation": "Miedo a perderse la experiencia",
+                        "factor": 0.6
+                    }
+                }
+            },
+            {
+                "answer": "Sugiero que vayamos a la playa en lugar de las montañas.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "endowmentEffect": {
+                        "afirmation": "Preferencia por lo conocido",
+                        "factor": 0.7
+                    },
+                    "representativeness": {
+                        "afirmation": "Creencia de que la playa es mejor basado en experiencias pasadas",
+                        "factor": 0.5
+                    }
+                }
+            },
+            {
+                "answer": "Propongo investigar más sobre ambos destinos antes de decidir.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "confirmationBias": {
+                        "afirmation": "Buscan información que confirme sus preferencias",
+                        "factor": 0.6
+                    },
+                    "statusQuo": {
+                        "afirmation": "Prefieren evitar cambios rápidos",
+                        "factor": 0.4
+                    }
+                }
+            },
+            {
+                "answer": "Decido quedarme en casa y dejar que ellos disfruten las montañas.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "selfControl": {
+                        "afirmation": "Evitar actividades no deseadas",
+                        "factor": 0.6
+                    },
+                    "statusQuo": {
+                        "afirmation": "Prefieren su zona de confort",
+                        "factor": 0.4
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "question": "Imaginá que estás planeando unas vacaciones y podés elegir entre un viaje organizado con todo incluido, que te ofrece comodidad y menos incertidumbre, o un viaje espontáneo y aventurero, que te permite explorar más pero con más planificación. ¿Qué elegirías y por qué?",
+        "answers": [
+            {
+                "answer": "Optaría por el viaje organizado; me gusta saber que todo está planeado.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "statusQuo": {
+                        "afirmation": "Preferencia por la certeza y lo conocido.",
+                        "factor": 0.8
+                    },
+                    "regretAversion": {
+                        "afirmation": "Evitar arrepentimientos al elegir una opción segura.",
+                        "factor": 0.6
+                    }
+                }
+            },
+            {
+                "answer": "Prefiero el viaje espontáneo; me entusiasma la aventura y la flexibilidad.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "overconfidence": {
+                        "afirmation": "Confianza en poder manejar la incertidumbre del viaje.",
+                        "factor": 0.7
+                    },
+                    "instantGratification": {
+                        "afirmation": "Deseo de experiencias inmediatas y emocionantes.",
+                        "factor": 0.6
+                    }
+                }
+            },
+            {
+                "answer": "No estoy seguro; ambos tipos de viaje tienen sus ventajas.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "mentalAccounting": {
+                        "afirmation": "Evaluación equilibrada de los beneficios de cada opción.",
+                        "factor": 0.5
+                    },
+                    "selfControl": {
+                        "afirmation": "Control de impulsos para no tomar una decisión apresurada.",
+                        "factor": 0.4
+                    }
+                }
+            },
+            {
+                "answer": "El viaje organizado parece más seguro, aunque el viaje espontáneo suena divertido.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "lossAversion": {
+                        "afirmation": "Miedo a perder la comodidad y seguridad del viaje organizado.",
+                        "factor": 0.7
+                    },
+                    "regretAversion": {
+                        "afirmation": "Evitar arrepentimientos por no elegir la opción más segura.",
+                        "factor": 0.5
+                    }
+                }
+            },
+            {
+                "answer": "Elegiría el viaje organizado, pero el viaje espontáneo es tentador.",
+                "options": false,
+                "likert": true,
+                "biases": {
+                    "statusQuo": {
+                        "afirmation": "Preferencia por lo conocido y la comodidad.",
+                        "factor": 0.6
+                    },
+                    "dispositionEffect": {
+                        "afirmation": "Mantener decisiones pasadas en lugar de arriesgarse.",
+                        "factor": 0.5
+                    }
+                }
             }
         ]
     }
+
 ]

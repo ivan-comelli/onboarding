@@ -1,0 +1,108 @@
+{
+    "selfEsteem": {
+        "overconfidence": {
+            "weight": 0.8,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "selfAttribution": {
+            "weight": 0.6,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "description": "La autoestima se refiere a la percepción general que una persona tiene de su propio valor y habilidades. Afecta cómo se siente y actúa en diferentes situaciones.",
+        "initValue": 0,
+        "finalValue": 0
+    },
+    "caution": {
+        "statusQuo": {
+            "weight": -0.7,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "regretAversion": {
+            "weight": -0.7,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "description": "La precaución refleja la tendencia a evitar riesgos y tomar decisiones más conservadoras para prevenir posibles pérdidas o errores.",
+        "initValue": 0,
+        "finalValue": 0
+    },
+    "cognition": {
+        "representativeness": {
+            "weight": 0.7,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "anchoringEffect": {
+            "weight": 0.6,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "mentalAccounting": {
+            "weight": 0.5,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "confirmationBias": {
+            "weight": 0.8,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "description": "La cognición abarca los procesos mentales relacionados con el conocimiento, el pensamiento y la toma de decisiones. Afecta cómo se procesa la información y cómo se toman las decisiones.",
+        "initValue": 0,
+        "finalValue": 0
+    },
+    "discipline": {
+        "selfControl": {
+            "weight": 0.9,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "procastination": {
+            "weight": -0.7,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "description": "La disciplina se refiere a la capacidad de mantener el enfoque y controlar los impulsos para alcanzar metas a largo plazo. Incluye el manejo del tiempo y la capacidad para cumplir con compromisos.",
+        "initValue": 0,
+        "finalValue": 0
+    },
+    "conformism": {
+        "herdBehavior": {
+            "weight": 0.8,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "endowmentEffect": {
+            "weight": 0.6,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "description": "El conformismo refleja la tendencia a ajustarse a las normas y comportamientos del grupo para evitar el conflicto y encajar en la sociedad.",
+        "initValue": 0,
+        "finalValue": 0
+    },
+    "flexibility": {
+        "dispositionEffect": {
+            "weight": -0.5,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "lossAversion": {
+            "weight": -0.9,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "instantGratification": {
+            "weight": -0.8,
+            "proportion": 0,
+            "intensity": 0
+        },
+        "description": "La flexibilidad se refiere a la capacidad de adaptarse a nuevas situaciones y cambiar de enfoque cuando sea necesario. Incluye la apertura al cambio y la adaptación a nuevas circunstancias.",
+        "initValue": 0,
+        "finalValue": 0
+    }
+
+}
