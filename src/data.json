@@ -11,66 +11,57 @@
                         {
                             "content": "¿Cuál es tu enfoque para identificar y manejar posibles gastos imprevistos?",
                             "type": "COMPETENCE",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "He creado un fondo de emergencia y reviso regularmente los gastos para ajustar el presupuesto.",
-                                    "value": 4
+                                    "content": "He creado un fondo de emergencia y reviso regularmente los gastos para ajustar el presupuesto."
                                 },
                                 {
-                                    "content": "He previsto algunos gastos imprevistos, pero no tengo un fondo específico para emergencias.",
-                                    "value": 3
+                                    "content": "He previsto algunos gastos imprevistos, pero no tengo un fondo específico para emergencias."
                                 },
                                 {
-                                    "content": "Solo reviso mi presupuesto ocasionalmente y hago ajustes cuando surgen gastos.",
-                                    "value": 2
+                                    "content": "Solo reviso mi presupuesto ocasionalmente y hago ajustes cuando surgen gastos."
                                 },
                                 {
-                                    "content": "No tengo una estrategia clara para manejar gastos imprevistos.",
-                                    "value": 1
+                                    "content": "No tengo una estrategia clara para manejar gastos imprevistos."
                                 }
                             ]
                         },
                         {
                             "content": "¿Cómo ajustas tu presupuesto al final del mes si los gastos se desvían de lo planeado?",
                             "type": "COMPETENCE",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Utilizo herramientas de seguimiento financiero que me ayudan a hacer ajustes precisos y planificar el próximo mes.",
-                                    "value": 4
+                                    "content": "Utilizo herramientas de seguimiento financiero que me ayudan a hacer ajustes precisos y planificar el próximo mes."
                                 },
                                 {
-                                    "content": "Hago ajustes manuales y trato de equilibrar el presupuesto, pero no siempre es exacto.",
-                                    "value": 3
+                                    "content": "Hago ajustes manuales y trato de equilibrar el presupuesto, pero no siempre es exacto."
                                 },
                                 {
-                                    "content": "Reviso el presupuesto y hago ajustes generales sin un análisis detallado.",
-                                    "value": 2
+                                    "content": "Reviso el presupuesto y hago ajustes generales sin un análisis detallado."
                                 },
                                 {
-                                    "content": "No realizo ajustes formales y simplemente trato de reducir gastos en áreas no esenciales.",
-                                    "value": 1
+                                    "content": "No realizo ajustes formales y simplemente trato de reducir gastos en áreas no esenciales."
                                 }
                             ]
                         },
                         {
                             "content": "¿Cuánto control crees que tienes sobre tus gastos imprevistos?",
                             "type": "PERCEPTION",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Me siento completamente preparado para cualquier gasto inesperado.",
-                                    "value": 4
+                                    "content": "Me siento completamente preparado para cualquier gasto inesperado."
                                 },
                                 {
-                                    "content": "Confío en mi capacidad para manejar los imprevistos sin problemas.",
-                                    "value": 3
+                                    "content": "Confío en mi capacidad para manejar los imprevistos sin problemas."
                                 },
                                 {
-                                    "content": "Creo que manejo bien los imprevistos, aunque no siempre es fácil.",
-                                    "value": 2
+                                    "content": "Creo que manejo bien los imprevistos, aunque no siempre es fácil."
                                 },
                                 {
-                                    "content": "Me siento inseguro sobre mi capacidad para manejar gastos inesperados.",
-                                    "value": 1
+                                    "content": "Me siento inseguro sobre mi capacidad para manejar gastos inesperados."
                                 }
                             ]
                         }
@@ -83,66 +74,57 @@
                         {
                             "content": "¿Qué herramientas o métodos usas para monitorear y ajustar tu presupuesto después de un gasto imprevisto?",
                             "type": "COMPETENCE",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Uso software de gestión financiera que me ayuda a identificar y ajustar rápidamente el presupuesto.",
-                                    "value": 4
+                                    "content": "Uso software de gestión financiera que me ayuda a identificar y ajustar rápidamente el presupuesto."
                                 },
                                 {
-                                    "content": "Mantengo un registro manual y hago ajustes según lo que encuentro necesario.",
-                                    "value": 3
+                                    "content": "Mantengo un registro manual y hago ajustes según lo que encuentro necesario."
                                 },
                                 {
-                                    "content": "Solo reviso mi presupuesto al final del mes y ajusto según sea necesario sin herramientas específicas.",
-                                    "value": 2
+                                    "content": "Solo reviso mi presupuesto al final del mes y ajusto según sea necesario sin herramientas específicas."
                                 },
                                 {
-                                    "content": "No utilizo herramientas específicas ni hago ajustes formales, solo trato de equilibrar mis gastos.",
-                                    "value": 1
+                                    "content": "No utilizo herramientas específicas ni hago ajustes formales, solo trato de equilibrar mis gastos."
                                 }
                             ]
                         },
                         {
                             "content": "¿Cómo evaluas la efectividad de tus ajustes en el presupuesto tras un gasto imprevisto?",
                             "type": "COMPETENCE",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Revisando los resultados de los ajustes realizados y ajustando mis estrategias para el futuro.",
-                                    "value": 4
+                                    "content": "Revisando los resultados de los ajustes realizados y ajustando mis estrategias para el futuro."
                                 },
                                 {
-                                    "content": "Hago una revisión general y realizo algunos ajustes menores si es necesario.",
-                                    "value": 3
+                                    "content": "Hago una revisión general y realizo algunos ajustes menores si es necesario."
                                 },
                                 {
-                                    "content": "Solo hago cambios básicos y no reviso detalladamente la efectividad de los ajustes.",
-                                    "value": 2
+                                    "content": "Solo hago cambios básicos y no reviso detalladamente la efectividad de los ajustes."
                                 },
                                 {
-                                    "content": "No evalúo la efectividad de los ajustes y continúo con el presupuesto sin cambios.",
-                                    "value": 1
+                                    "content": "No evalúo la efectividad de los ajustes y continúo con el presupuesto sin cambios."
                                 }
                             ]
                         },
                         {
                             "content": "¿Qué tan efectivo consideras que es tu método para manejar gastos inesperados?",
                             "type": "PERCEPTION",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Creo que mi método es muy efectivo y confío en mi capacidad para manejar cualquier gasto.",
-                                    "value": 4
+                                    "content": "Creo que mi método es muy efectivo y confío en mi capacidad para manejar cualquier gasto."
                                 },
                                 {
-                                    "content": "Mi método funciona bien, aunque sé que puede mejorarse.",
-                                    "value": 3
+                                    "content": "Mi método funciona bien, aunque sé que puede mejorarse."
                                 },
                                 {
-                                    "content": "Reconozco que mi método tiene limitaciones y no siempre es efectivo.",
-                                    "value": 2
+                                    "content": "Reconozco que mi método tiene limitaciones y no siempre es efectivo."
                                 },
                                 {
-                                    "content": "No estoy satisfecho con mi capacidad para manejar imprevistos.",
-                                    "value": 1
+                                    "content": "No estoy satisfecho con mi capacidad para manejar imprevistos."
                                 }
                             ]
                         }
@@ -155,66 +137,57 @@
                         {
                             "content": "¿Cómo evalúas la efectividad de tu estrategia de presupuesto al revisar tus gastos al final del mes?",
                             "type": "COMPETENCE",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Estoy contento con mi estrategia y los ajustes que realizo son efectivos.",
-                                    "value": 4
+                                    "content": "Estoy contento con mi estrategia y los ajustes que realizo son efectivos."
                                 },
                                 {
-                                    "content": "Mi estrategia funciona en general, aunque sé que hay margen para mejorar.",
-                                    "value": 3
+                                    "content": "Mi estrategia funciona en general, aunque sé que hay margen para mejorar."
                                 },
                                 {
-                                    "content": "Estoy consciente de las deficiencias en mi estrategia y cómo afectan mi control financiero.",
-                                    "value": 2
+                                    "content": "Estoy consciente de las deficiencias en mi estrategia y cómo afectan mi control financiero."
                                 },
                                 {
-                                    "content": "Reconozco que mi estrategia es ineficaz y no logro manejar mi presupuesto adecuadamente.",
-                                    "value": 1
+                                    "content": "Reconozco que mi estrategia es ineficaz y no logro manejar mi presupuesto adecuadamente."
                                 }
                             ]
                         },
                         {
                             "content": "¿Cómo ajustas tu planificación financiera a largo plazo después de identificar problemas recurrentes?",
                             "type": "COMPETENCE",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Hago una revisión exhaustiva de mi planificación y aplico cambios sustanciales para evitar problemas futuros.",
-                                    "value": 4
+                                    "content": "Hago una revisión exhaustiva de mi planificación y aplico cambios sustanciales para evitar problemas futuros."
                                 },
                                 {
-                                    "content": "Hago ajustes moderados en mi planificación para abordar algunos problemas recurrentes.",
-                                    "value": 3
+                                    "content": "Hago ajustes moderados en mi planificación para abordar algunos problemas recurrentes."
                                 },
                                 {
-                                    "content": "Realizo cambios menores y trato de ajustar la planificación sin abordar problemas fundamentales.",
-                                    "value": 2
+                                    "content": "Realizo cambios menores y trato de ajustar la planificación sin abordar problemas fundamentales."
                                 },
                                 {
-                                    "content": "No realizo ajustes significativos y continúo con la misma planificación a pesar de los problemas recurrentes.",
-                                    "value": 1
+                                    "content": "No realizo ajustes significativos y continúo con la misma planificación a pesar de los problemas recurrentes."
                                 }
                             ]
                         },
                         {
                             "content": "¿Cómo percibes tu control general sobre tus gastos y ajustes presupuestarios?",
                             "type": "PERCEPTION",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Estoy muy satisfecho con mi control general y la forma en que manejo mis ajustes presupuestarios.",
-                                    "value": 4
+                                    "content": "Estoy muy satisfecho con mi control general y la forma en que manejo mis ajustes presupuestarios."
                                 },
                                 {
-                                    "content": "Mi control es generalmente bueno, aunque reconozco que hay áreas que podrían mejorar.",
-                                    "value": 3
+                                    "content": "Mi control es generalmente bueno, aunque reconozco que hay áreas que podrían mejorar."
                                 },
                                 {
-                                    "content": "Mi control es aceptable, pero a menudo tengo problemas para ajustar mi presupuesto de manera efectiva.",
-                                    "value": 2
+                                    "content": "Mi control es aceptable, pero a menudo tengo problemas para ajustar mi presupuesto de manera efectiva."
                                 },
                                 {
-                                    "content": "No estoy satisfecho con mi control general y tengo dificultades para manejar mis ajustes presupuestarios.",
-                                    "value": 1
+                                    "content": "No estoy satisfecho con mi control general y tengo dificultades para manejar mis ajustes presupuestarios."
                                 }
                             ]
                         }
@@ -235,110 +208,95 @@
                         {
                             "content": "¿Cómo decides en qué gastar una ganancia inesperada?",
                             "type": "COMPETENCE",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Planifico cómo utilizar la ganancia, priorizando necesidades y ahorros antes de gastar en deseos.",
-                                    "value": 4
+                                    "content": "Planifico cómo utilizar la ganancia, priorizando necesidades y ahorros antes de gastar en deseos."
                                 },
                                 {
-                                    "content": "Gasto en artículos que me parecen atractivos en el momento, sin mucha planificación previa.",
-                                    "value": 3
+                                    "content": "Gasto en artículos que me parecen atractivos en el momento, sin mucha planificación previa."
                                 },
                                 {
-                                    "content": "Compro cosas impulsivamente sin considerar si realmente las necesito.",
-                                    "value": 2
+                                    "content": "Compro cosas impulsivamente sin considerar si realmente las necesito."
                                 },
                                 {
-                                    "content": "No tengo una estrategia clara y gasto el dinero sin pensar en las consecuencias.",
-                                    "value": 1
+                                    "content": "No tengo una estrategia clara y gasto el dinero sin pensar en las consecuencias."
                                 }
                             ]
                         },
                         {
                             "content": "¿Cómo manejas los bienes o servicios que compras de forma impulsiva?",
                             "type": "COMPETENCE",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Reviso regularmente mis compras impulsivas y trato de devolver o vender lo que no necesito.",
-                                    "value": 4
+                                    "content": "Reviso regularmente mis compras impulsivas y trato de devolver o vender lo que no necesito."
                                 },
                                 {
-                                    "content": "Hago ajustes ocasionales, pero a menudo termino conservando bienes innecesarios.",
-                                    "value": 3
+                                    "content": "Hago ajustes ocasionales, pero a menudo termino conservando bienes innecesarios."
                                 },
                                 {
-                                    "content": "No hago mucho para gestionar estas compras y frecuentemente mantengo bienes que no uso.",
-                                    "value": 2
+                                    "content": "No hago mucho para gestionar estas compras y frecuentemente mantengo bienes que no uso."
                                 },
                                 {
-                                    "content": "No me preocupo por gestionar las compras impulsivas y frecuentemente acumulo bienes innecesarios.",
-                                    "value": 1
+                                    "content": "No me preocupo por gestionar las compras impulsivas y frecuentemente acumulo bienes innecesarios."
                                 }
                             ]
                         },
                         {
                             "content": "¿Qué tan a menudo revisas tus gastos y bienes adquiridos para asegurarte de que sean útiles y necesarios?",
                             "type": "COMPETENCE",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Hago revisiones periódicas y ajusto mi presupuesto y compras basándome en esas revisiones.",
-                                    "value": 4
+                                    "content": "Hago revisiones periódicas y ajusto mi presupuesto y compras basándome en esas revisiones."
                                 },
                                 {
-                                    "content": "Realizo revisiones ocasionales y trato de ajustar mi presupuesto según sea necesario.",
-                                    "value": 3
+                                    "content": "Realizo revisiones ocasionales y trato de ajustar mi presupuesto según sea necesario."
                                 },
                                 {
-                                    "content": "Hago pocas revisiones y rara vez ajusto mis gastos o elimino bienes innecesarios.",
-                                    "value": 2
+                                    "content": "Hago pocas revisiones y rara vez ajusto mis gastos o elimino bienes innecesarios."
                                 },
                                 {
-                                    "content": "No realizo revisiones y no ajusto mis gastos ni gestiono mis bienes.",
-                                    "value": 1
+                                    "content": "No realizo revisiones y no ajusto mis gastos ni gestiono mis bienes."
                                 }
                             ]
                         },
                         {
                             "content": "Cuando recibes una ganancia inesperada, ¿cómo te sientes sobre gastar el dinero de inmediato?",
                             "type": "PERCEPTION",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Me siento satisfecho con mis decisiones y creo que gastar en el momento es una buena forma de disfrutar el dinero.",
-                                    "value": 4
+                                    "content": "Me siento satisfecho con mis decisiones y creo que gastar en el momento es una buena forma de disfrutar el dinero."
                                 },
                                 {
-                                    "content": "Me siento bien, aunque a veces pienso que debería planificar mejor.",
-                                    "value": 3
+                                    "content": "Me siento bien, aunque a veces pienso que debería planificar mejor."
                                 },
                                 {
-                                    "content": "A menudo me arrepiento de gastar rápidamente y creo que debería ser más cauteloso.",
-                                    "value": 2
+                                    "content": "A menudo me arrepiento de gastar rápidamente y creo que debería ser más cauteloso."
                                 },
                                 {
-                                    "content": "Me siento incómodo con mis decisiones de gasto y creo que debería controlar mejor mis impulsos.",
-                                    "value": 1
+                                    "content": "Me siento incómodo con mis decisiones de gasto y creo que debería controlar mejor mis impulsos."
                                 }
                             ]
                         },
                         {
                             "content": "¿Cómo evaluas tu capacidad para evitar la compra de bienes innecesarios?",
                             "type": "PERCEPTION",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Creo que tengo un buen control y evito comprar bienes innecesarios en la mayoría de los casos.",
-                                    "value": 4
+                                    "content": "Creo que tengo un buen control y evito comprar bienes innecesarios en la mayoría de los casos."
                                 },
                                 {
-                                    "content": "En general, evito compras innecesarias, aunque a veces me dejo llevar.",
-                                    "value": 3
+                                    "content": "En general, evito compras innecesarias, aunque a veces me dejo llevar."
                                 },
                                 {
-                                    "content": "Reconozco que frecuentemente compro bienes que no necesito y tengo dificultades para evitarlo.",
-                                    "value": 2
+                                    "content": "Reconozco que frecuentemente compro bienes que no necesito y tengo dificultades para evitarlo."
                                 },
                                 {
-                                    "content": "Siento que tengo poco control sobre mis compras y frecuentemente adquiero bienes innecesarios.",
-                                    "value": 1
+                                    "content": "Siento que tengo poco control sobre mis compras y frecuentemente adquiero bienes innecesarios."
                                 }
                             ]
                         }
@@ -351,88 +309,229 @@
                         {
                             "content": "¿Cómo decides si gastar o ahorrar una ganancia inesperada?",
                             "type": "COMPETENCE",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Considero cuidadosamente mis necesidades y metas financieras antes de decidir si gastar o ahorrar.",
-                                    "value": 4
+                                    "content": "Considero cuidadosamente mis necesidades y metas financieras antes de decidir si gastar o ahorrar."
                                 },
                                 {
-                                    "content": "A veces ahorro, pero también me dejo llevar por impulsos de gasto.",
-                                    "value": 3
+                                    "content": "A veces ahorro, pero también me dejo llevar por impulsos de gasto."
                                 },
                                 {
-                                    "content": "Tiende a ahorrar por defecto, aunque a menudo tengo impulsos de gasto.",
-                                    "value": 2
+                                    "content": "Tiende a ahorrar por defecto, aunque a menudo tengo impulsos de gasto."
                                 },
                                 {
-                                    "content": "Generalmente gasto sin considerar el ahorro, incluso si tengo una ganancia inesperada.",
-                                    "value": 1
+                                    "content": "Generalmente gasto sin considerar el ahorro, incluso si tengo una ganancia inesperada."
                                 }
                             ]
                         },
                         {
                             "content": "¿Qué haces con los bienes o servicios que compras impulsivamente después de un tiempo?",
                             "type": "COMPETENCE",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Evalúo regularmente la utilidad de los bienes y hago ajustes como devolver o vender los innecesarios.",
-                                    "value": 4
+                                    "content": "Evalúo regularmente la utilidad de los bienes y hago ajustes como devolver o vender los innecesarios."
                                 },
                                 {
-                                    "content": "Hago algunos ajustes, pero con frecuencia guardo artículos que no uso.",
-                                    "value": 3
+                                    "content": "Hago algunos ajustes, pero con frecuencia guardo artículos que no uso."
                                 },
                                 {
-                                    "content": "No hago muchas revisiones y a menudo conservo bienes que no necesito.",
-                                    "value": 2
+                                    "content": "No hago muchas revisiones y a menudo conservo bienes que no necesito."
                                 },
                                 {
-                                    "content": "No reviso mis compras impulsivas y frecuentemente acumulo bienes innecesarios.",
-                                    "value": 1
+                                    "content": "No reviso mis compras impulsivas y frecuentemente acumulo bienes innecesarios."
                                 }
                             ]
                         },
                         {
                             "content": "¿Cómo evalúas tu capacidad para resistir la compra de bienes innecesarios cuando tienes dinero disponible?",
                             "type": "PERCEPTION",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Siento que tengo un buen control y evito compras innecesarias cuando tengo dinero disponible.",
-                                    "value": 4
+                                    "content": "Siento que tengo un buen control y evito compras innecesarias cuando tengo dinero disponible."
                                 },
                                 {
-                                    "content": "Generalmente evito compras innecesarias, pero a veces me dejo llevar.",
-                                    "value": 3
+                                    "content": "Generalmente evito compras innecesarias, pero a veces me dejo llevar."
                                 },
                                 {
-                                    "content": "Me doy cuenta de que frecuentemente compro bienes innecesarios y tengo dificultades para resistirme.",
-                                    "value": 2
+                                    "content": "Me doy cuenta de que frecuentemente compro bienes innecesarios y tengo dificultades para resistirme."
                                 },
                                 {
-                                    "content": "Siento que no tengo control y frecuentemente compro cosas que no necesito cuando tengo dinero disponible.",
-                                    "value": 1
+                                    "content": "Siento que no tengo control y frecuentemente compro cosas que no necesito cuando tengo dinero disponible."
                                 }
                             ]
                         },
                         {
                             "content": "¿Qué tan satisfecho estás con tu estrategia de ahorro y gasto para las ganancias inesperadas?",
                             "type": "PERCEPTION",
+                            "index": 0,
                             "answers": [
                                 {
-                                    "content": "Estoy muy satisfecho con mi estrategia y creo que manejo bien el dinero inesperado.",
-                                    "value": 4
+                                    "content": "Estoy muy satisfecho con mi estrategia y creo que manejo bien el dinero inesperado."
                                 },
                                 {
-                                    "content": "Estoy bastante satisfecho, aunque sé que siempre hay espacio para mejorar.",
-                                    "value": 3
+                                    "content": "Estoy bastante satisfecho, aunque sé que siempre hay espacio para mejorar."
                                 },
                                 {
-                                    "content": "Me siento algo insatisfecho y reconozco que necesito mejorar mi enfoque.",
-                                    "value": 2
+                                    "content": "Me siento algo insatisfecho y reconozco que necesito mejorar mi enfoque."
                                 },
                                 {
-                                    "content": "Estoy insatisfecho con mi estrategia y creo que necesito hacer cambios significativos.",
-                                    "value": 1
+                                    "content": "Estoy insatisfecho con mi estrategia y creo que necesito hacer cambios significativos."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "herd_behavior": {
+        "thread": {
+            "title": "Evaluación del Comportamiento de Seguimiento a la Multitud en Decisiones Financieras",
+            "instructions": "Selecciona uno de los siguientes escenarios que mejor se ajuste a tu experiencia con la toma de decisiones financieras basada en el comportamiento de la multitud. Responde las preguntas para evaluar tu percepción y comportamiento en relación con este sesgo.",
+            "scenarios": [
+                {
+                    "title": "La Compra Impulsiva Basada en Tendencias",
+                    "narrative": "Observas que muchas personas están comprando un nuevo gadget o inversión popular. Decides hacer lo mismo, aunque no has investigado si realmente es beneficioso para ti o si se ajusta a tus necesidades.",
+                    "questions": [
+                        {
+                            "content": "¿Cómo decides si seguir una tendencia popular en compras o inversiones?",
+                            "type": "COMPETENCE",
+                            "index": 0,
+                            "answers": [
+                                {
+                                    "content": "Investigo y analizo si la tendencia realmente aporta valor y se ajusta a mis necesidades antes de decidir."
+                                },
+                                {
+                                    "content": "Considero la tendencia, pero también hago algo de investigación para ver si realmente es adecuado para mí."
+                                },
+                                {
+                                    "content": "Principalmente me dejo llevar por la popularidad y hago una mínima investigación."
+                                },
+                                {
+                                    "content": "Sigo la tendencia sin hacer ninguna investigación y compro o invierto solo porque todos lo están haciendo."
+                                }
+                            ]
+                        },
+                        {
+                            "content": "Cuando observas que la mayoría de las personas están haciendo una compra o inversión, ¿cómo te sientes?",
+                            "type": "PERCEPTION",
+                            "index": 0,
+                            "answers": [
+                                {
+                                    "content": "Siento que es importante investigar antes de seguir la tendencia y no me dejo llevar solo por la popularidad."
+                                },
+                                {
+                                    "content": "Me siento tentado a seguir la tendencia, pero trato de equilibrar con alguna investigación previa."
+                                },
+                                {
+                                    "content": "Me dejo influenciar por la mayoría y a menudo hago compras o inversiones sin mucha reflexión."
+                                },
+                                {
+                                    "content": "Siento que seguir la multitud es la mejor opción y actúo en consecuencia sin investigar."
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Con qué frecuencia te ves influenciado por las decisiones de compra o inversión de los demás?",
+                            "type": "PERCEPTION",
+                            "index": 0,
+                            "answers": [
+                                {
+                                    "content": "Rara vez me dejo influenciar por los demás y siempre evalúo las decisiones de forma independiente."
+                                },
+                                {
+                                    "content": "A veces me dejo influenciar, pero trato de hacer un análisis adicional antes de decidir."
+                                },
+                                {
+                                    "content": "Frecuentemente me dejo llevar por las decisiones de los demás sin una investigación profunda."
+                                },
+                                {
+                                    "content": "Casi siempre sigo lo que hacen los demás y hago compras o inversiones sin evaluar si es adecuado para mí."
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Qué tan satisfecho estás con tus decisiones de compra o inversión cuando sigues las tendencias populares?",
+                            "type": "PERCEPTION",
+                            "index": 0,
+                            "answers": [
+                                {
+                                    "content": "Estoy satisfecho porque suelo hacer investigaciones adecuadas antes de seguir las tendencias."
+                                },
+                                {
+                                    "content": "Estoy razonablemente satisfecho, aunque reconozco que podría mejorar mi análisis."
+                                },
+                                {
+                                    "content": "A menudo me arrepiento de seguir las tendencias sin suficiente investigación y siento que podría haber tomado mejores decisiones."
+                                },
+                                {
+                                    "content": "Estoy insatisfecho porque frecuentemente sigo las tendencias sin considerar si son realmente beneficiosas para mí."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "La Inversión Basada en Popularidad",
+                    "narrative": "Te das cuenta de que muchas personas están invirtiendo en un nuevo tipo de criptomoneda o acción popular. Decides hacer lo mismo basándote solo en la popularidad y en la percepción de que todos están invirtiendo.",
+                    "questions": [
+                        {
+                            "content": "¿Cómo determinas si seguir una inversión que está de moda en el mercado?",
+                            "type": "COMPETENCE",
+                            "index": 0,
+                            "answers": [
+                                {
+                                    "content": "Investigo en profundidad y evalúo si la inversión es sólida y se alinea con mis objetivos financieros."
+                                },
+                                {
+                                    "content": "Realizo algo de investigación, pero la popularidad juega un papel importante en mi decisión."
+                                },
+                                {
+                                    "content": "Principalmente me baso en la popularidad y hago poca investigación sobre la inversión."
+                                },
+                                {
+                                    "content": "Invierto solo porque es popular, sin investigar si es adecuada para mí o no."
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Qué tan a menudo sigues las inversiones que están de moda sin hacer una investigación adecuada?",
+                            "type": "PERCEPTION",
+                            "index": 0,
+                            "answers": [
+                                {
+                                    "content": "Rara vez sigo modas sin investigación y siempre hago un análisis adecuado antes de invertir."
+                                },
+                                {
+                                    "content": "A veces sigo las modas, pero trato de equilibrar con investigación previa."
+                                },
+                                {
+                                    "content": "Frecuentemente me dejo llevar por las modas y hago inversiones sin suficiente investigación."
+                                },
+                                {
+                                    "content": "Casi siempre sigo las tendencias de inversión sin investigar si son adecuadas para mí."
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Cómo te sientes acerca de tus inversiones cuando te das cuenta de que solo seguiste una moda?",
+                            "type": "PERCEPTION",
+                            "index": 0,
+                            "answers": [
+                                {
+                                    "content": "Siento que he tomado una buena decisión porque hice mi investigación a pesar de la moda."
+                                },
+                                {
+                                    "content": "Siento que la investigación y la moda jugaron un papel en mi decisión, aunque podría mejorar."
+                                },
+                                {
+                                    "content": "A menudo me arrepiento de seguir la moda sin suficiente investigación y siento que podría haber tomado una mejor decisión."
+                                },
+                                {
+                                    "content": "Siento que seguir la moda sin investigar es una mala decisión y me arrepiento de no haber hecho un análisis adecuado."
                                 }
                             ]
                         }

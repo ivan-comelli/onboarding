@@ -1,43 +1,49 @@
 <template>
-    <div class="encuesta">
+    <div class="survey">
       <h1>Encuesta: Perfiles Conductuales</h1>
       <div class="items" v-for="(item, index) in survey" :key="index">
-        {{ index }}
+        <h5>{{ index }}</h5>
         <div>
           <h3>{{ item.thread.title }}</h3>
           <p>{{ item.thread.instructions  }}</p>
         </div>
         <div class="scenarios" v-if="answersOptions[index] == null">
-          <div v-for="(instance, idx) in item.thread.scenarios" :key="idx">
-            <h4>{{ instance.title  }}</h4>
+          <div class="instance" v-for="(instance, idx) in item.thread.scenarios" :key="idx">
+            <h4 class="title">{{ instance.title  }}</h4>
             <label>
               <input
                 type="radio"
                 :name="'pregunta' + index"
                 :value="instance"
                 v-model="answersOptions[index]"
+                @change="pagesIndex[index] = 0"
               />
               {{ instance.narrative }}
             </label>
           </div>
         </div>
-        <div class="afirmations" v-else>  
-          <div v-for="(question, idx) in answersOptions[index].questions" :key="idx">
-            <div>
-              <label>
-                {{ question.content }}
-              </label>
-              <div>
-                <label>
-                  {{ question.answers[value].content }}
-                  <vue-slider v-model="value" :min="0" :max="3" />
-                </label>
+        <div class="questions" v-else-if="pagesIndex[index] != null">  
+          <div>
+            <h4>
+              {{ answersOptions[index].questions[pagesIndex[index]].content }}
+            </h4>
+            
+            <div class="answer">
+              {{ answersOptions[index].questions[pagesIndex[index]].answers[answersOptions[index].questions[pagesIndex[index]].index].content }}
+              <vue-slider v-model="answersOptions[index].questions[pagesIndex[index]].index" :min="0" :max="3" />
+              <div class="indicators">
+                <span @click="answersOptions[index].questions[pagesIndex[index]].index = 0">Bueno</span>
+                <span @click="answersOptions[index].questions[pagesIndex[index]].index = 1">Casi Bueno</span>
+                <span @click="answersOptions[index].questions[pagesIndex[index]].index = 2">Regular</span>
+                <span @click="answersOptions[index].questions[pagesIndex[index]].index = 3">Malo</span>
               </div>
             </div>
             
-            
           </div>
-          <button @click="answersOptions[index] = null">Atras</button>
+          <div class="actions">
+            <button @click="pagesIndex[index] > 0 ? pagesIndex[index] -= 1 : answersOptions[index] = null">Atras</button>
+            <button @click="pagesIndex[index] < 2 ? pagesIndex[index] += 1 : null">Siguiente</button>
+          </div>
         </div>
       </div>
       <button @click="submitSurvey">Enviar Encuesta</button>
@@ -49,7 +55,6 @@
   import surveyJson from '../data.json';
   import valuesJson from '../model.json';
   import VueApexCharts from "vue3-apexcharts";
-  import { reactive, toRefs } from 'vue'
   import VueSlider from 'vue-slider-component'
   import 'vue-slider-component/theme/antd.css'
 
@@ -58,12 +63,9 @@
       apexchart: VueApexCharts,
       VueSlider
     },
-    setup() {
-      const data = reactive({ value: 0 })
-      return toRefs(data)
-    },
     data() {
       return {
+        pagesIndex: [],
         options: {
           bar: {
             horizontal: true
@@ -221,54 +223,55 @@
       }
     }
   };
-  </script>
+</script>
   
-  <style scoped>
-  .encuesta {
+<style scoped>
+  .survey {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  .encuesta h1 {
+  .encusurveyesta h1 {
     text-align: center;
   }
-  .encuesta h3 {
+  .survey h3 {
     margin-top: 20px;
+    text-align: left;
   }
-  .encuesta label {
+  .survey h4 {
+    text-align: left;
+    height: 2em;
+  }
+  .survey label {
     display: block;
     margin-bottom: 10px;
     text-align: left;
-    margin-left: 2em;
+    padding: 0 1em;
   }
-  .encuesta button {
+  .survey button {
     display: block;
-    margin: 20px auto;
     padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
+    color: #007BFF;
+    background-color: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
-  .afirmations {
-    background: #f7f7f7;
+  .questions {
+    background: #d1d1d1;
     padding: 2em;
   }
-  .afirmations-options {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 2em 0em;
-
-  }
-  .options {
+  p {
     text-align: left;
-    border: solid .1em #d7d7d7;
-    padding: 0.6em;
-    border-radius: 1.5em;
+  }
+  .scenarios {
+    background: #d9d9d9;
+    padding: 1em;
+  }
+  .instance {
+    margin-bottom: 3em;
   }
   .items {
     display: flex;
@@ -277,8 +280,45 @@
     border-bottom: solid .1em #c3c3c3;
     padding-bottom: 2em;
   }
-  b {
-    color: #30316d;
+  .survey h5 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2em;
   }
-  </style>
+  .actions {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 3em;
+
+    gap: 5em;
+  }
+  .answer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: #007071;
+  }
+  .indicators {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .indicators span { 
+    color: white !important;
+    padding: 1em 2em;
+    border-radius: 1em;
+  }
+  .indicators span:nth-child(1) {
+    background-color: rgb(0, 62, 196) !important;
+  }
+  .indicators span:nth-child(2) {
+    background-color: rgb(49, 173, 0)!important;
+  }
+  .indicators span:nth-child(3) {
+    background-color: rgb(255, 172, 18) !important;
+  }
+  .indicators span:nth-child(4) {
+    background-color: rgb(194, 8, 8) !important;
+  }
+</style>
   
