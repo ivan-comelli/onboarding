@@ -2,30 +2,46 @@
     <div class="encuesta">
       <h1>Encuesta: Perfiles Conductuales</h1>
       <div class="items" v-for="(item, index) in survey" :key="index">
-        <h3>{{ item.question }}</h3>
-        <div v-if="answersOptions[index] == null">
-          <label v-for="(instance, idx) in item.answers" :key="idx">
-            <input
-              type="radio"
-              :name="'pregunta' + index"
-              :value="instance"
-              v-model="answersOptions[index]"
-            />
-            {{ instance.answer }}
-          </label>
+        {{ index }}
+        <div>
+          <h3>{{ item.thread.title }}</h3>
+          <p>{{ item.thread.instructions  }}</p>
         </div>
-        <div class="afirmations" v-else>
-            <b>{{ answersOptions[index].answer }}</b>
-            <div class="afirmations-options">
-              <div class="options" v-for="(bias, idx) in answersOptions[index].biases" :key="idx">
-                {{ idx + ": " + bias.afirmation + " = " + bias.factor }}
+        <div class="scenarios" v-if="answersOptions[index] == null">
+          <div v-for="(instance, idx) in item.thread.scenarios" :key="idx">
+            <h4>{{ instance.title  }}</h4>
+            <label>
+              <input
+                type="radio"
+                :name="'pregunta' + index"
+                :value="instance"
+                v-model="answersOptions[index]"
+              />
+              {{ instance.narrative }}
+            </label>
+          </div>
+        </div>
+        <div class="afirmations" v-else>  
+          <div v-for="(question, idx) in answersOptions[index].questions" :key="idx">
+            <div>
+              <label>
+                {{ question.content }}
+              </label>
+              <div>
+                <label>
+                  {{ question.answers[value].content }}
+                  <vue-slider v-model="value" :min="0" :max="3" />
+                </label>
               </div>
             </div>
-            <button @click="answersOptions[index] = null">Atras</button>
+            
+            
+          </div>
+          <button @click="answersOptions[index] = null">Atras</button>
         </div>
       </div>
       <button @click="submitSurvey">Enviar Encuesta</button>
-      <apexchart width="500" type="bar" :options="options" :series="series"></apexchart>
+      <apexchart width="500" type="bar" :options="options" :series="series" />
     </div>
   </template>
   
@@ -33,10 +49,18 @@
   import surveyJson from '../data.json';
   import valuesJson from '../model.json';
   import VueApexCharts from "vue3-apexcharts";
+  import { reactive, toRefs } from 'vue'
+  import VueSlider from 'vue-slider-component'
+  import 'vue-slider-component/theme/antd.css'
 
   export default {
     components: {
       apexchart: VueApexCharts,
+      VueSlider
+    },
+    setup() {
+      const data = reactive({ value: 0 })
+      return toRefs(data)
     },
     data() {
       return {

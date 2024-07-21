@@ -1,401 +1,444 @@
-[
-    {
-        "question": "Imaginá que estás comenzando un nuevo proyecto que te tiene muy entusiasmado, como abrir tu propio negocio o iniciar un curso que te apasiona. Después de mucho trabajo y preparación, recibís algunas críticas o sugerencias para mejorar. ¿Cómo te sentirías y qué harías?",
-        "answers": [
-            {
-                "answer": "Sentiría que las críticas son una oportunidad para aprender y mejorar. Aunque me afectaría un poco, lo tomaría como un desafío para crecer.",
-                "options": true,
-                "likert": false,
-                "biases": {
-                    "overconfidence": {
-                        "afirmation": "Confianza en la capacidad de aprender y mejorar pese a las críticas.",
-                        "factor": 0.3
-                    },
-                    "selfAttribution": {
-                        "afirmation": "Atribución a la habilidad para superar desafíos, aunque afectado.",
-                        "factor": 0.5
-                    }
+{
+    "mirage_of_control": {
+        "thread": {
+            "title": "Evaluación del Espejismo de Control en la Gestión Financiera",
+            "instructions": "Elige uno de los siguientes escenarios que mejor se ajuste a tu experiencia o situación actual. Responde las preguntas basadas en ese escenario para evaluar tu habilidad técnica en la gestión de gastos y tu percepción del control.",
+            "scenarios": [
+                {
+                    "title": "El Controlado",
+                    "narrative": "Has elaborado un presupuesto detallado y sientes que has considerado todos los posibles gastos del mes. Durante la primera semana, todo parece ir según lo planeado.",
+                    "questions": [
+                        {
+                            "content": "¿Cuál es tu enfoque para identificar y manejar posibles gastos imprevistos?",
+                            "type": "COMPETENCE",
+                            "answers": [
+                                {
+                                    "content": "He creado un fondo de emergencia y reviso regularmente los gastos para ajustar el presupuesto.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "He previsto algunos gastos imprevistos, pero no tengo un fondo específico para emergencias.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Solo reviso mi presupuesto ocasionalmente y hago ajustes cuando surgen gastos.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "No tengo una estrategia clara para manejar gastos imprevistos.",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Cómo ajustas tu presupuesto al final del mes si los gastos se desvían de lo planeado?",
+                            "type": "COMPETENCE",
+                            "answers": [
+                                {
+                                    "content": "Utilizo herramientas de seguimiento financiero que me ayudan a hacer ajustes precisos y planificar el próximo mes.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Hago ajustes manuales y trato de equilibrar el presupuesto, pero no siempre es exacto.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Reviso el presupuesto y hago ajustes generales sin un análisis detallado.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "No realizo ajustes formales y simplemente trato de reducir gastos en áreas no esenciales.",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Cuánto control crees que tienes sobre tus gastos imprevistos?",
+                            "type": "PERCEPTION",
+                            "answers": [
+                                {
+                                    "content": "Me siento completamente preparado para cualquier gasto inesperado.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Confío en mi capacidad para manejar los imprevistos sin problemas.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Creo que manejo bien los imprevistos, aunque no siempre es fácil.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "Me siento inseguro sobre mi capacidad para manejar gastos inesperados.",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "El Ajustador",
+                    "narrative": "A mitad de mes, encuentras que tu presupuesto se ha desviado debido a un gasto no previsto. A pesar de tus esfuerzos por mantenerte en el camino, este gasto imprevisto te hace replantear tu control financiero.",
+                    "questions": [
+                        {
+                            "content": "¿Qué herramientas o métodos usas para monitorear y ajustar tu presupuesto después de un gasto imprevisto?",
+                            "type": "COMPETENCE",
+                            "answers": [
+                                {
+                                    "content": "Uso software de gestión financiera que me ayuda a identificar y ajustar rápidamente el presupuesto.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Mantengo un registro manual y hago ajustes según lo que encuentro necesario.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Solo reviso mi presupuesto al final del mes y ajusto según sea necesario sin herramientas específicas.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "No utilizo herramientas específicas ni hago ajustes formales, solo trato de equilibrar mis gastos.",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Cómo evaluas la efectividad de tus ajustes en el presupuesto tras un gasto imprevisto?",
+                            "type": "COMPETENCE",
+                            "answers": [
+                                {
+                                    "content": "Revisando los resultados de los ajustes realizados y ajustando mis estrategias para el futuro.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Hago una revisión general y realizo algunos ajustes menores si es necesario.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Solo hago cambios básicos y no reviso detalladamente la efectividad de los ajustes.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "No evalúo la efectividad de los ajustes y continúo con el presupuesto sin cambios.",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Qué tan efectivo consideras que es tu método para manejar gastos inesperados?",
+                            "type": "PERCEPTION",
+                            "answers": [
+                                {
+                                    "content": "Creo que mi método es muy efectivo y confío en mi capacidad para manejar cualquier gasto.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Mi método funciona bien, aunque sé que puede mejorarse.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Reconozco que mi método tiene limitaciones y no siempre es efectivo.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "No estoy satisfecho con mi capacidad para manejar imprevistos.",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "El Reflexivo",
+                    "narrative": "Al final del mes, revisas tus gastos y te das cuenta de que has tenido que hacer ajustes frecuentes en tu presupuesto debido a varios gastos imprevistos. Esto te lleva a reflexionar sobre tu control financiero general.",
+                    "questions": [
+                        {
+                            "content": "¿Cómo evalúas la efectividad de tu estrategia de presupuesto al revisar tus gastos al final del mes?",
+                            "type": "COMPETENCE",
+                            "answers": [
+                                {
+                                    "content": "Estoy contento con mi estrategia y los ajustes que realizo son efectivos.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Mi estrategia funciona en general, aunque sé que hay margen para mejorar.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Estoy consciente de las deficiencias en mi estrategia y cómo afectan mi control financiero.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "Reconozco que mi estrategia es ineficaz y no logro manejar mi presupuesto adecuadamente.",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Cómo ajustas tu planificación financiera a largo plazo después de identificar problemas recurrentes?",
+                            "type": "COMPETENCE",
+                            "answers": [
+                                {
+                                    "content": "Hago una revisión exhaustiva de mi planificación y aplico cambios sustanciales para evitar problemas futuros.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Hago ajustes moderados en mi planificación para abordar algunos problemas recurrentes.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Realizo cambios menores y trato de ajustar la planificación sin abordar problemas fundamentales.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "No realizo ajustes significativos y continúo con la misma planificación a pesar de los problemas recurrentes.",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Cómo percibes tu control general sobre tus gastos y ajustes presupuestarios?",
+                            "type": "PERCEPTION",
+                            "answers": [
+                                {
+                                    "content": "Estoy muy satisfecho con mi control general y la forma en que manejo mis ajustes presupuestarios.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Mi control es generalmente bueno, aunque reconozco que hay áreas que podrían mejorar.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Mi control es aceptable, pero a menudo tengo problemas para ajustar mi presupuesto de manera efectiva.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "No estoy satisfecho con mi control general y tengo dificultades para manejar mis ajustes presupuestarios.",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
                 }
-            },
-            {
-                "answer": "Me sentiría desalentado/a y empezaría a cuestionar si estoy realmente a la altura. Podría dudar de mis habilidades y del proyecto en sí.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "overconfidence": {
-                        "afirmation": "Menor confianza en habilidades, duda ante críticas.",
-                        "factor": 0.1
-                    },
-                    "selfAttribution": {
-                        "afirmation": "Alta duda sobre habilidades propias y proyecto debido a críticas.",
-                        "factor": 0.7
-                    }
-                }
-            },
-            {
-                "answer": "Pensaría que los comentarios no entienden mi visión y seguiría adelante con mi plan. Mantendría mi confianza en la dirección que elegí.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "overconfidence": {
-                        "afirmation": "Alta confianza en la visión propia, desestimación de críticas.",
-                        "factor": 0.8
-                    },
-                    "selfAttribution": {
-                        "afirmation": "Atribución de éxito a la visión propia, ignorando críticas.",
-                        "factor": 0.4
-                    }
-                }
-            }
-        ]
+            ]
+        }
     },
-    {
-        "question": "Estás pensando en cambiar de trabajo para un puesto que ofrece un salario más alto, pero conlleva más responsabilidades y riesgos. ¿Cómo decidirías si dar el salto o quedarte en tu empleo actual?",
-        "answers": [
-            {
-                "answer": "Aceptar el nuevo trabajo inmediatamente para aprovechar el aumento de salario.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "instantGratification": {
-                        "afirmation": "Prioriza la recompensa inmediata sin considerar riesgos a largo plazo.",
-                        "factor": 0.7
-                    },
-                    "statusQuo": {
-                        "afirmation": "Decisión impulsiva para obtener beneficios rápidos, ignorando la estabilidad actual.",
-                        "factor": 0.3
-                    }                   
+    "disposition_effect": {
+        "thread": {
+            "title": "Evaluación del Efecto de Disposición en la Gestión Financiera",
+            "instructions": "Selecciona uno de los siguientes escenarios que mejor se ajuste a tu experiencia con ganancias inesperadas y gastos. Responde las preguntas para evaluar tu competencia en la gestión de estos eventos y tu percepción sobre cómo manejas estos comportamientos.",
+            "scenarios": [
+                {
+                    "title": "El Gasto Inmediato",
+                    "narrative": "Recibes un bono inesperado en el trabajo y decides gastarlo rápidamente en artículos que no necesitas, como un nuevo gadget y ropa de lujo. A medida que pasan los meses, te das cuenta de que estos gastos no eran necesarios y que te has quedado con bienes que no usas.",
+                    "questions": [
+                        {
+                            "content": "¿Cómo decides en qué gastar una ganancia inesperada?",
+                            "type": "COMPETENCE",
+                            "answers": [
+                                {
+                                    "content": "Planifico cómo utilizar la ganancia, priorizando necesidades y ahorros antes de gastar en deseos.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Gasto en artículos que me parecen atractivos en el momento, sin mucha planificación previa.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Compro cosas impulsivamente sin considerar si realmente las necesito.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "No tengo una estrategia clara y gasto el dinero sin pensar en las consecuencias.",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Cómo manejas los bienes o servicios que compras de forma impulsiva?",
+                            "type": "COMPETENCE",
+                            "answers": [
+                                {
+                                    "content": "Reviso regularmente mis compras impulsivas y trato de devolver o vender lo que no necesito.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Hago ajustes ocasionales, pero a menudo termino conservando bienes innecesarios.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "No hago mucho para gestionar estas compras y frecuentemente mantengo bienes que no uso.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "No me preocupo por gestionar las compras impulsivas y frecuentemente acumulo bienes innecesarios.",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Qué tan a menudo revisas tus gastos y bienes adquiridos para asegurarte de que sean útiles y necesarios?",
+                            "type": "COMPETENCE",
+                            "answers": [
+                                {
+                                    "content": "Hago revisiones periódicas y ajusto mi presupuesto y compras basándome en esas revisiones.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Realizo revisiones ocasionales y trato de ajustar mi presupuesto según sea necesario.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Hago pocas revisiones y rara vez ajusto mis gastos o elimino bienes innecesarios.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "No realizo revisiones y no ajusto mis gastos ni gestiono mis bienes.",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "content": "Cuando recibes una ganancia inesperada, ¿cómo te sientes sobre gastar el dinero de inmediato?",
+                            "type": "PERCEPTION",
+                            "answers": [
+                                {
+                                    "content": "Me siento satisfecho con mis decisiones y creo que gastar en el momento es una buena forma de disfrutar el dinero.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Me siento bien, aunque a veces pienso que debería planificar mejor.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "A menudo me arrepiento de gastar rápidamente y creo que debería ser más cauteloso.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "Me siento incómodo con mis decisiones de gasto y creo que debería controlar mejor mis impulsos.",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Cómo evaluas tu capacidad para evitar la compra de bienes innecesarios?",
+                            "type": "PERCEPTION",
+                            "answers": [
+                                {
+                                    "content": "Creo que tengo un buen control y evito comprar bienes innecesarios en la mayoría de los casos.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "En general, evito compras innecesarias, aunque a veces me dejo llevar.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Reconozco que frecuentemente compro bienes que no necesito y tengo dificultades para evitarlo.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "Siento que tengo poco control sobre mis compras y frecuentemente adquiero bienes innecesarios.",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "El Ahorro Reflexivo",
+                    "narrative": "Recibes un bono inesperado y decides guardarlo en tu cuenta de ahorros. Sin embargo, después de un tiempo, te das cuenta de que aún tienes deseos de gastar en bienes o servicios que no necesitas, pero te resistes a hacerlo.",
+                    "questions": [
+                        {
+                            "content": "¿Cómo decides si gastar o ahorrar una ganancia inesperada?",
+                            "type": "COMPETENCE",
+                            "answers": [
+                                {
+                                    "content": "Considero cuidadosamente mis necesidades y metas financieras antes de decidir si gastar o ahorrar.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "A veces ahorro, pero también me dejo llevar por impulsos de gasto.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Tiende a ahorrar por defecto, aunque a menudo tengo impulsos de gasto.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "Generalmente gasto sin considerar el ahorro, incluso si tengo una ganancia inesperada.",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Qué haces con los bienes o servicios que compras impulsivamente después de un tiempo?",
+                            "type": "COMPETENCE",
+                            "answers": [
+                                {
+                                    "content": "Evalúo regularmente la utilidad de los bienes y hago ajustes como devolver o vender los innecesarios.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Hago algunos ajustes, pero con frecuencia guardo artículos que no uso.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "No hago muchas revisiones y a menudo conservo bienes que no necesito.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "No reviso mis compras impulsivas y frecuentemente acumulo bienes innecesarios.",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Cómo evalúas tu capacidad para resistir la compra de bienes innecesarios cuando tienes dinero disponible?",
+                            "type": "PERCEPTION",
+                            "answers": [
+                                {
+                                    "content": "Siento que tengo un buen control y evito compras innecesarias cuando tengo dinero disponible.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Generalmente evito compras innecesarias, pero a veces me dejo llevar.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Me doy cuenta de que frecuentemente compro bienes innecesarios y tengo dificultades para resistirme.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "Siento que no tengo control y frecuentemente compro cosas que no necesito cuando tengo dinero disponible.",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "content": "¿Qué tan satisfecho estás con tu estrategia de ahorro y gasto para las ganancias inesperadas?",
+                            "type": "PERCEPTION",
+                            "answers": [
+                                {
+                                    "content": "Estoy muy satisfecho con mi estrategia y creo que manejo bien el dinero inesperado.",
+                                    "value": 4
+                                },
+                                {
+                                    "content": "Estoy bastante satisfecho, aunque sé que siempre hay espacio para mejorar.",
+                                    "value": 3
+                                },
+                                {
+                                    "content": "Me siento algo insatisfecho y reconozco que necesito mejorar mi enfoque.",
+                                    "value": 2
+                                },
+                                {
+                                    "content": "Estoy insatisfecho con mi estrategia y creo que necesito hacer cambios significativos.",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
                 }
-            },
-            {
-                "answer": "Investigar a fondo el nuevo trabajo y comparar con tu situación actual antes de decidir.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "regretAversion": {
-                        "afirmation": "Investigación exhaustiva para evitar arrepentimientos futuros.",
-                        "factor": 0.6
-                    },
-                    "statusQuo": {
-                        "afirmation": "Evaluación cuidadosa para decidir si mantener la situación actual o cambiar.",
-                        "factor": 0.4
-                    }  
-                }
-            },
-            {
-                "answer": "Esperar a recibir la opinión de colegas y familiares antes de decidir.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "herdBehavior": {
-                        "afirmation": "Buscar el consejo de otros para minimizar riesgos y obtener validación.",
-                        "factor": 0.6
-                    },
-                    "regretAversion": {
-                        "afirmation": "Consultar para evitar arrepentimientos futuros al tomar una decisión informada.",
-                        "factor": 0.4
-                    }
-                }
-            },
-            {
-                "answer": "Decidir quedarte en tu trabajo actual porque temes los riesgos del nuevo puesto.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "lossAversion": {
-                        "afirmation": "Evitar el riesgo y la posible pérdida al valorar la estabilidad actual por encima del aumento de salario.",
-                        "factor": 0.8
-                    },
-                    "regretAversion": {
-                        "afirmation": "Evitar la posibilidad de arrepentimiento al no asumir riesgos.",
-                        "factor": 0.2
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "question": "Imagina que estás a punto de comprar tu primer auto y ves dos ofertas en línea: una es un modelo nuevo y la otra es de un modelo usado con buenas reseñas. ¿Cómo decides cuál comprar?",
-        "answers": [
-            {
-                "answer": "Elijo el modelo nuevo porque creo que será más confiable.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "representativeness": {
-                        "afirmation": "Estás juzgando la confiabilidad del auto basándote en la representación del modelo nuevo como más fiable.",
-                        "factor": 0.7
-                    },
-                    "anchoringEffect": {
-                        "afirmation": "El modelo nuevo establece un punto de referencia que puede influir en tu percepción de confiabilidad.",
-                        "factor": 0.3
-                    }
-                }
-            },
-            {
-                "answer": "Opto por el modelo usado porque las reseñas positivas me dan seguridad.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "mentalAccounting": {
-                        "afrimation": "Valoración del auto usado basada en las reseñas positivas, considerando esto como una 'buena inversión'.",
-                        "factor": 0.5
-                    },
-                    "confirmationBias": {
-                        "afrimation": "Buscas y confías en las reseñas que confirman tu creencia en la calidad del auto usado.",
-                        "factor": 0.5
-                    }
-                }
-            },
-            {
-                "answer": "Me dejo llevar por la oferta que veo primero, sin pensarlo mucho.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "anchoringEffect": {
-                        "afirmation": "La primera oferta vista actúa como un punto de referencia que afecta tu decisión.",
-                        "factor": 0.7
-                    },
-                    "overconfidence": {
-                        "afirmation": "Confías demasiado en tu primera impresión y no consideras otras opciones adecuadamente.",
-                        "factor": 0.3
-                    }
-                }
-            },
-            {
-                "answer": "Investigo mucho antes de decidir, comparando precios y características detalladamente.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    
-                }
-            },
-            {
-                "answer": "Elijo basándome en lo que me recomienda un amigo cercano.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "representativeness": {
-                        "afirmation": "La recomendación del amigo puede influir en tu percepción de la calidad del auto.",
-                        "factor": 0.4
-                    },
-                    "anchoringEffect": {
-                        "afirmation": "La recomendación actúa como un punto de referencia que afecta tu decisión.",
-                        "factor": 0.3
-                    },
-                    "confirmationBias": {
-                        "afirmation": "Buscas confirmar la recomendación de tu amigo y descartar otras opciones.",
-                        "factor": 0.3
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "question": "Imagina que tienes un proyecto importante que debe ser entregado en una semana, pero hay una fiesta este fin de semana que realmente quieres asistir. ¿Cómo manejas la situación?",
-        "answers": [
-            {
-                "answer": "Dejo todo para después de la fiesta, ya me pondré al día luego.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "procastination": {
-                        "afirmation": "Posponer el trabajo para después del evento.",
-                        "factor": 0.8
-                    },
-                    "instantGratification": {
-                        "afirmation": "Preferir disfrutar la fiesta en lugar de trabajar.",
-                        "factor": 0.6
-                    }
-                }
-            },
-            {
-                "answer": "Trabajo duro antes de la fiesta para poder disfrutar sin preocupaciones.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "selfControl": {
-                        "afirmation": "Controlar el impulso de procrastinar para cumplir con el plazo.",
-                        "factor": 0.7
-                    }
-                }
-            },
-            {
-                "answer": "Decido no ir a la fiesta para asegurarme de terminar el proyecto a tiempo.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "selfControl": {
-                        "afirmation": "Priorizar el trabajo sobre la gratificación inmediata.",
-                        "factor": 0.9
-                    },
-                    "regretAversion": {
-                        "afirmation": "Evitar el arrepentimiento de no cumplir con el proyecto.",
-                        "factor": 0.5
-                    }
-                }
-            },
-            {
-                "answer": "Trato de equilibrar el trabajo y la fiesta, haciéndolo todo a última hora.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "procastination": {
-                        "afirmation": "Dejar el trabajo para el último momento.",
-                        "factor": 0.7
-                    },
-                    "instantGratification": {
-                        "afirmation": "Intentar disfrutar la fiesta mientras se trabaja en el proyecto de forma apurada.",
-                        "factor": 0.4
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "question": "Tus amigos deciden hacer un viaje de fin de semana a las montañas para hacer senderismo y acampar. A vos no te gusta mucho la idea porque preferís las playas y no estás seguro de disfrutar la experiencia. ¿Qué hacés?",
-        "answers": [
-            {
-                "answer": "Voy con ellos, no quiero ser el único que se quede en casa.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "herdBehavior": {
-                        "afirmation": "seguir al grupo",
-                        "factor": 0.9
-                    },
-                    "lossAversion": {
-                        "afirmation": "Miedo a perderse la experiencia",
-                        "factor": 0.6
-                    }
-                }
-            },
-            {
-                "answer": "Sugiero que vayamos a la playa en lugar de las montañas.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "endowmentEffect": {
-                        "afirmation": "Preferencia por lo conocido",
-                        "factor": 0.7
-                    },
-                    "representativeness": {
-                        "afirmation": "Creencia de que la playa es mejor basado en experiencias pasadas",
-                        "factor": 0.5
-                    }
-                }
-            },
-            {
-                "answer": "Propongo investigar más sobre ambos destinos antes de decidir.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "confirmationBias": {
-                        "afirmation": "Buscan información que confirme sus preferencias",
-                        "factor": 0.6
-                    },
-                    "statusQuo": {
-                        "afirmation": "Prefieren evitar cambios rápidos",
-                        "factor": 0.4
-                    }
-                }
-            },
-            {
-                "answer": "Decido quedarme en casa y dejar que ellos disfruten las montañas.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "selfControl": {
-                        "afirmation": "Evitar actividades no deseadas",
-                        "factor": 0.6
-                    },
-                    "statusQuo": {
-                        "afirmation": "Prefieren su zona de confort",
-                        "factor": 0.4
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "question": "Imaginá que estás planeando unas vacaciones y podés elegir entre un viaje organizado con todo incluido, que te ofrece comodidad y menos incertidumbre, o un viaje espontáneo y aventurero, que te permite explorar más pero con más planificación. ¿Qué elegirías y por qué?",
-        "answers": [
-            {
-                "answer": "Optaría por el viaje organizado; me gusta saber que todo está planeado.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "statusQuo": {
-                        "afirmation": "Preferencia por la certeza y lo conocido.",
-                        "factor": 0.8
-                    },
-                    "regretAversion": {
-                        "afirmation": "Evitar arrepentimientos al elegir una opción segura.",
-                        "factor": 0.6
-                    }
-                }
-            },
-            {
-                "answer": "Prefiero el viaje espontáneo; me entusiasma la aventura y la flexibilidad.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "overconfidence": {
-                        "afirmation": "Confianza en poder manejar la incertidumbre del viaje.",
-                        "factor": 0.7
-                    },
-                    "instantGratification": {
-                        "afirmation": "Deseo de experiencias inmediatas y emocionantes.",
-                        "factor": 0.6
-                    }
-                }
-            },
-            {
-                "answer": "No estoy seguro; ambos tipos de viaje tienen sus ventajas.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "mentalAccounting": {
-                        "afirmation": "Evaluación equilibrada de los beneficios de cada opción.",
-                        "factor": 0.5
-                    },
-                    "selfControl": {
-                        "afirmation": "Control de impulsos para no tomar una decisión apresurada.",
-                        "factor": 0.4
-                    }
-                }
-            },
-            {
-                "answer": "El viaje organizado parece más seguro, aunque el viaje espontáneo suena divertido.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "lossAversion": {
-                        "afirmation": "Miedo a perder la comodidad y seguridad del viaje organizado.",
-                        "factor": 0.7
-                    },
-                    "regretAversion": {
-                        "afirmation": "Evitar arrepentimientos por no elegir la opción más segura.",
-                        "factor": 0.5
-                    }
-                }
-            },
-            {
-                "answer": "Elegiría el viaje organizado, pero el viaje espontáneo es tentador.",
-                "options": false,
-                "likert": true,
-                "biases": {
-                    "statusQuo": {
-                        "afirmation": "Preferencia por lo conocido y la comodidad.",
-                        "factor": 0.6
-                    },
-                    "dispositionEffect": {
-                        "afirmation": "Mantener decisiones pasadas en lugar de arriesgarse.",
-                        "factor": 0.5
-                    }
-                }
-            }
-        ]
+            ]
+        }
     }
-
-]
+}

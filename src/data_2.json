@@ -1,0 +1,26 @@
+{
+    "overconfidence": {
+        "thread": {
+            "title": "",
+            "instructions": "",
+            "scenarios": [
+                {
+                    "title": "",
+                    "narrative": "",
+                    "questions": [
+                        {
+                            "content": "",
+                            "type": "COMPETENCE | PERCEPTION",
+                            "answers": [ 
+                                {
+                                    "content": "",
+                                    "value": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
